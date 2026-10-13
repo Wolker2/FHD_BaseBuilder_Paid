@@ -1,0 +1,298 @@
+BV ^{
+    OnLoad ^{
+        Runtime ~{
+        }
+    }
+    OnStart ^{
+        0DayScripts ~{
+        }
+    }
+}
+ML ^{
+    StarMap ^{
+        Panel ^{
+            FHDBaseBuilderPaidButton ^{
+                Panel ^{
+                    GraphButton ^{
+                        Caption=
+                        CaptionAlignX=Center
+                        CaptionAlignY=CenterEx
+                        CaptionColorDown=255,255,230
+                        CaptionColorDownA=255,255,230
+                        CaptionColorNormal=255,255,230
+                        CaptionColorNormalA=255,255,230
+                        Font=Font.2SmallBold
+                        Help=Help.FHDBaseBuilderPaidOpen
+                        ImageDown=GI,Bm.FHDBaseBuilder.2InvestD
+                        ImageNormal=GI,Bm.FHDBaseBuilder.2InvestN
+                        ImageNormalA=GI,Bm.FHDBaseBuilder.2InvestA
+                        Kind=Normal
+                        KindHit=Rect
+                        MouseBlocking=True
+                        MouseBlockingTest=False
+                        Name=FHDBaseBuilderPaidButtonAction
+                        OnPressCode ~{
+                            00=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.FHDBaseBuilderPaid.Open'));
+                        }
+                        Pos=0,0,-1
+                        Size=32,32
+                        Style=Style.GB.SoundNormal
+                    }
+                    Name=FHDBaseBuilderPaidButton
+                    Pos=4,108,-100
+                    Size=32,32
+                }
+            }
+            FHDBaseBuilderPaidOfferContainer ^{
+                Window ^{
+                    Active=False
+                    GraphButton ^{
+                        Caption=1. Конечно! За такое предложение нужно хвататься обеими руками!
+                        CaptionAlignX=Center
+                        CaptionAlignY=CenterEx
+                        CaptionColorDown=255,255,230
+                        CaptionColorDownA=255,255,230
+                        CaptionColorNormal=255,255,230
+                        CaptionColorNormalA=255,255,230
+                        Font=Font.2SmallBold
+                        ImageDown=GI,Bm.FHDBaseBuilder.OfferBtnD
+                        ImageNormal=GI,Bm.FHDBaseBuilder.OfferBtnN
+                        ImageNormalA=GI,Bm.FHDBaseBuilder.OfferBtnA
+                        Kind=Normal
+                        KindHit=Rect
+                        MouseBlocking=True
+                        MouseBlockingTest=False
+                        Name=FHDBaseBuilderPaidOfferAccept
+                        OnPressCode ~{
+                            00=InterfaceState('StarMap','FHDBaseBuilderPaidOfferPanel',0);ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.FHDBaseBuilderPaid.BeginOrder'));
+                        }
+                        Pos=34,538,-3
+                        Size=892,34
+                        Style=Style.GB.SoundNormal
+                    }
+                    GraphButton ^{
+                        Caption=2. Мне нужно подумать над вашим предложением.
+                        CaptionAlignX=Center
+                        CaptionAlignY=CenterEx
+                        CaptionColorDown=255,255,230
+                        CaptionColorDownA=255,255,230
+                        CaptionColorNormal=255,255,230
+                        CaptionColorNormalA=255,255,230
+                        Font=Font.2SmallBold
+                        ImageDown=GI,Bm.FHDBaseBuilder.OfferBtnD
+                        ImageNormal=GI,Bm.FHDBaseBuilder.OfferBtnN
+                        ImageNormalA=GI,Bm.FHDBaseBuilder.OfferBtnA
+                        Kind=Normal
+                        KindHit=Rect
+                        MouseBlocking=True
+                        MouseBlockingTest=False
+                        Name=FHDBaseBuilderPaidOfferDecline
+                        OnPressCode ~{
+                            00=InterfaceState('StarMap','FHDBaseBuilderPaidOfferPanel',0);
+                        }
+                        Pos=34,584,-3
+                        Size=892,34
+                        Style=Style.GB.SoundNormal
+                    }
+                    Label ~{
+                        AlignX=Center
+                        AlignY=CenterEx
+                        Font=Font.2Ranger
+                        Name=FHDBaseBuilderPaidOfferTitle
+                        Pos=20,8,-2
+                        Size=920,34
+                        Text=Центральный Инвестиционный Бизнес-центр Коалиции
+                        TextColor=88,229,255
+                    }
+                    Label ~{
+                        AlignX=Center
+                        AlignY=CenterEx
+                        Font=Font.2SmallBold
+                        Name=FHDBaseBuilderPaidOfferGreeting
+                        Pos=20,48,-2
+                        Size=920,26
+                        Text=Здравствуйте!
+                        TextColor=255,215,100
+                    }
+                    Label ~{
+                        AlignX=Left
+                        AlignY=CenterEx
+                        Font=Font.2Small
+                        Name=FHDBaseBuilderPaidOfferLine01
+                        Pos=34,82,-2
+                        Size=892,23
+                        Text=Вас приветствует "Центральный Инвестиционный Бизнес-центр Коалиции".
+                        TextColor=255,255,230
+                    }
+                    Label ~{
+                        AlignX=Left
+                        AlignY=CenterEx
+                        Font=Font.2Small
+                        Name=FHDBaseBuilderPaidOfferLine02
+                        Pos=34,107,-2
+                        Size=892,23
+                        Text=К вашему вниманию мы предлагаем уникальную возможность инвестировать ваши кредиты
+                        TextColor=255,255,230
+                    }
+                    Label ~{
+                        AlignX=Left
+                        AlignY=CenterEx
+                        Font=Font.2Small
+                        Name=FHDBaseBuilderPaidOfferLine03
+                        Pos=34,132,-2
+                        Size=892,23
+                        Text=в строительство суперсовременных космических станций!
+                        TextColor=255,255,230
+                    }
+                    Label ~{
+                        AlignX=Left
+                        AlignY=CenterEx
+                        Font=Font.2Small
+                        Name=FHDBaseBuilderPaidOfferLine04
+                        Pos=34,157,-2
+                        Size=892,23
+                        Text=Минимальная стоимость строительства — 1 500 000 кредитов. Каждая следующая станция
+                        TextColor=255,255,230
+                    }
+                    Label ~{
+                        AlignX=Left
+                        AlignY=CenterEx
+                        Font=Font.2Small
+                        Name=FHDBaseBuilderPaidOfferLine05
+                        Pos=34,182,-2
+                        Size=892,23
+                        Text=обойдётся на 500 000 кредитов дороже, но максимальная стоимость — 4 000 000 кредитов.
+                        TextColor=255,255,230
+                    }
+                    Label ~{
+                        AlignX=Left
+                        AlignY=CenterEx
+                        Font=Font.2Small
+                        Name=FHDBaseBuilderPaidOfferLine06
+                        Pos=34,207,-2
+                        Size=892,23
+                        Text=После завершения строительства ваша инвестиция начнёт постепенно окупаться.
+                        TextColor=255,255,230
+                    }
+                    Label ~{
+                        AlignX=Left
+                        AlignY=CenterEx
+                        Font=Font.2Small
+                        Name=FHDBaseBuilderPaidOfferLine07
+                        Pos=34,232,-2
+                        Size=892,23
+                        Text=Если, конечно, эту систему не захватят, а саму станцию не уничтожат...
+                        TextColor=255,255,230
+                    }
+                    Label ~{
+                        AlignX=Left
+                        AlignY=CenterEx
+                        Font=Font.2Small
+                        Name=FHDBaseBuilderPaidOfferLine08
+                        Pos=34,257,-2
+                        Size=892,23
+                        Text=Хи-хи-хи.
+                        TextColor=255,255,230
+                    }
+                    Label ~{
+                        AlignX=Left
+                        AlignY=CenterEx
+                        Font=Font.2Small
+                        Name=FHDBaseBuilderPaidOfferLine09
+                        Pos=34,282,-2
+                        Size=892,23
+                        Text=Кхм... Прошу прощения. О чём это я?
+                        TextColor=255,255,230
+                    }
+                    Label ~{
+                        AlignX=Left
+                        AlignY=CenterEx
+                        Font=Font.2Small
+                        Name=FHDBaseBuilderPaidOfferLine10
+                        Pos=34,307,-2
+                        Size=892,23
+                        Text=Ах да! Прибыль!
+                        TextColor=255,255,230
+                    }
+                    Label ~{
+                        AlignX=Left
+                        AlignY=CenterEx
+                        Font=Font.2Small
+                        Name=FHDBaseBuilderPaidOfferLine11
+                        Pos=34,332,-2
+                        Size=892,23
+                        Text=После постройки станции вам будет начисляться:
+                        TextColor=255,255,230
+                    }
+                    Label ~{
+                        AlignX=Left
+                        AlignY=CenterEx
+                        Font=Font.2Small
+                        Name=FHDBaseBuilderPaidOfferLine12
+                        Pos=34,357,-2
+                        Size=892,23
+                        Text=- 200 000 кредитов каждый год, пока станция существует и находится
+                        TextColor=255,255,230
+                    }
+                    Label ~{
+                        AlignX=Left
+                        AlignY=CenterEx
+                        Font=Font.2Small
+                        Name=FHDBaseBuilderPaidOfferLine13
+                        Pos=34,382,-2
+                        Size=892,23
+                        Text=  на подконтрольной территории Коалиции.
+                        TextColor=255,255,230
+                    }
+                    Label ~{
+                        AlignX=Left
+                        AlignY=CenterEx
+                        Font=Font.2Small
+                        Name=FHDBaseBuilderPaidOfferLine14
+                        Pos=34,407,-2
+                        Size=892,23
+                        Text=Стоимость зависит от количества действующих и строящихся инвестиционных станций.
+                        TextColor=255,255,230
+                    }
+                    Label ~{
+                        AlignX=Left
+                        AlignY=CenterEx
+                        Font=Font.2Small
+                        Name=FHDBaseBuilderPaidOfferLine15
+                        Pos=34,432,-2
+                        Size=892,23
+                        Text=Первая станция окупается примерно за 7лет; последующие — дольше.
+                        TextColor=255,255,230
+                    }
+                    Label ~{
+                        AlignX=Left
+                        AlignY=CenterEx
+                        Font=Font.2Small
+                        Name=FHDBaseBuilderPaidOfferLine16
+                        Pos=34,457,-2
+                        Size=892,23
+                        Text=Обеспечьте свою не долгую старость весомым копиталом ХА-ХА-ХА.
+                        TextColor=255,255,230
+                    }
+                    Label ~{
+                        AlignX=Left
+                        AlignY=CenterEx
+                        Font=Font.2Small
+                        Name=FHDBaseBuilderPaidOfferLine17
+                        Pos=34,482,-2
+                        Size=892,23
+                        Text=Ну что? Вас заинтересовало наше скромное предложение?
+                        TextColor=255,255,230
+                    }
+                    Modal=True
+                    MouseBlocking=True
+                    MouseBlockingTest=True
+                    Name=FHDBaseBuilderPaidOfferPanel
+                    Pos=500,200,-300
+                    Size=960,640
+                    Style=Style.Window.2Normal
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,277 @@
+Help ~{
+    FHDBaseBuilderPaidOpen=Open the Coalition Central Investment Business Center
+}
+Script ^{
+    FHDBaseBuilderPaid ^{
+        BeginOrder ^{
+            01=unknown typeNames=newarray(6);
+            02=typeNames[0]='Science station';
+            03=typeNames[1]='Military base';
+            04=typeNames[2]='Ranger Center';
+            05=typeNames[3]='Business center';
+            06=typeNames[4]='Pirate base';
+            07=typeNames[5]='Medical center';
+            08=int typeIndex=ListBox('Choose the type of investment station:',typeNames);
+            09=if(typeIndex<0)
+            10 ~{
+                01=free(typeNames);
+                02=exit;
+            }
+            11=str stationName=typeNames[typeIndex];
+            12=free(typeNames);
+            13=str stationCode=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.FHDInvestmentCore.ResolveType'),'type_index',typeIndex,'stationCode');
+            14=int raceIndex=-1;
+            15=int race=-1;
+            16=str raceName='';
+            17=if(typeIndex==0)
+            18 ~{
+                01=unknown raceNamesSB=newarray(2);
+                02=raceNamesSB[0]='Gaalians'; raceNamesSB[1]='Feyans';
+                03=raceIndex=ListBox('Choose the owner race for station "'+stationName+'»:',raceNamesSB);
+                04=if(raceIndex>=0){raceName=raceNamesSB[raceIndex];if(raceIndex==0)race=4;else race=3;}
+                05=free(raceNamesSB);
+            }
+            19=else if(typeIndex==1)
+            20 ~{
+                01=unknown raceNamesWB=newarray(2);
+                02=raceNamesWB[0]='Maloks'; raceNamesWB[1]='Pelengs';
+                03=raceIndex=ListBox('Choose the owner race for station "'+stationName+'»:',raceNamesWB);
+                04=if(raceIndex>=0){raceName=raceNamesWB[raceIndex];if(raceIndex==0)race=0;else race=1;}
+                05=free(raceNamesWB);
+            }
+            21=else if(typeIndex==2)
+            22 ~{
+                01=unknown raceNamesRC=newarray(2);
+                02=raceNamesRC[0]='Feyans'; raceNamesRC[1]='Gaalians';
+                03=raceIndex=ListBox('Choose the owner race for station "'+stationName+'»:',raceNamesRC);
+                04=if(raceIndex>=0){raceName=raceNamesRC[raceIndex];if(raceIndex==0)race=3;else race=4;}
+                05=free(raceNamesRC);
+            }
+            23=else if(typeIndex==3)
+            24 ~{
+                01=unknown raceNamesBK=newarray(1);
+                02=raceNamesBK[0]='Humans';
+                03=raceIndex=ListBox('Choose the owner race for station "'+stationName+'»:',raceNamesBK);
+                04=if(raceIndex>=0){raceName=raceNamesBK[raceIndex];race=2;}
+                05=free(raceNamesBK);
+            }
+            25=else if(typeIndex==4)
+            26 ~{
+                01=unknown raceNamesPB=newarray(2);
+                02=raceNamesPB[0]='Pelengs'; raceNamesPB[1]='Humans';
+                03=raceIndex=ListBox('Choose the owner race for station "'+stationName+'»:',raceNamesPB);
+                04=if(raceIndex>=0){raceName=raceNamesPB[raceIndex];if(raceIndex==0)race=1;else race=2;}
+                05=free(raceNamesPB);
+            }
+            27=else
+            28 ~{
+                01=unknown raceNamesMC=newarray(1);
+                02=raceNamesMC[0]='Gaalians';
+                03=raceIndex=ListBox('Choose the owner race for station "'+stationName+'»:',raceNamesMC);
+                04=if(raceIndex>=0){raceName=raceNamesMC[raceIndex];race=4;}
+                05=free(raceNamesMC);
+            }
+            29=if(raceIndex<0)exit;
+            37=unknown starObjects=newarray(1);
+            38=unknown starNames=newarray(1);
+            39=int starCount=0;
+            40=for(int i=0;i<GalaxyStars();i=i+1)
+            41 ^{
+                01=dword star=GalaxyStar(i);
+                02=if(!star)continue;
+                03=if(!SectorVisible(StarToCon(star)))continue;
+                04=int pending=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.FHDInvestmentCore.PendingCount'),'star_id',Id(star),'result');
+                05=if(StarRuins(star)+pending>=3)continue;
+                06=if(StarRuins(star,stationCode))continue;
+                07=if(ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.FHDInvestmentCore.HasPendingType'),'star_id',Id(star),'station_code',stationCode,'result'))continue;
+                08=if(!starCount)
+                09 ~{
+                    01=starObjects[0]=star;
+                    02=starNames[0]=StarName(star);
+                    03=starCount=1;
+                }
+                10=else
+                11 ~{
+                    01=ArrayAdd(starObjects,star);
+                    02=ArrayAdd(starNames,StarName(star));
+                    03=starCount=starCount+1;
+                }
+            }
+            42=if(!starCount)
+            43 ~{
+                01=free(starObjects);
+                02=free(starNames);
+                03=MessageBox('No suitable explored systems: the three-station limit has been reached, or a station of this type already exists or has been ordered.');
+                04=exit;
+            }
+            44=if(starCount>1)ArraySort(starNames,starObjects);
+            45=int starIndex=ListBox('Choose an explored system. Systems without available station slots are hidden:',starNames);
+            46=if(starIndex<0)
+            47 ~{
+                01=free(starObjects);
+                02=free(starNames);
+                03=exit;
+            }
+            48=dword targetStar=starObjects[starIndex];
+            49=str targetStarName=StarName(targetStar);
+            50=free(starObjects);
+            51=free(starNames);
+            52=int investmentCount=0;for(int j=0;j<ShipCustomShipInfosCount(Player());j=j+1){str investmentMarker=ShipCustomShipInfoTextData(Player(),j,3);if(findsubstr(investmentMarker,'FHDINV|')==0)investmentCount=investmentCount+1;}int buildCost=1500000;str buildCostText='1 500 000';if(investmentCount==1){buildCost=2000000;buildCostText='2 000 000';}else if(investmentCount==2){buildCost=2500000;buildCostText='2 500 000';}else if(investmentCount==3){buildCost=3000000;buildCostText='3 000 000';}else if(investmentCount==4){buildCost=3500000;buildCostText='3 500 000';}else if(investmentCount>=5){buildCost=4000000;buildCostText='4 000 000';}
+            53=str summary='INVESTMENT PROJECT\n\nSystem: '+targetStarName+'\nStation: '+stationName+'\nOwner: '+raceName+'\nConstruction time: 30 days\nCompletion date: '+GameDateTxtByTurn(CurTurn()+30)+'\nCost: '+buildCostText+' credits';
+            54=unknown confirmActions=newarray(3); confirmActions[0]='Confirm investment'; confirmActions[1]=' '; confirmActions[2]='Captain, cancel. I have changed my mind'; int confirm=ListBox(summary,confirmActions); free(confirmActions); if(confirm!=0)exit;
+            55=if(ShipMoney(Player())<buildCost)
+            56 ~{
+                01=MessageBox('Insufficient credits. To make this investment you need '+buildCostText+' credits.');
+                02=exit;
+            }
+            57=ShipMoney(Player(),ShipMoney(Player())-buildCost);
+            58=dword recordInfo=ShipAddCustomShipInfo(Player(),'FHDInvestmentRecord','NoShow',0,Id(targetStar),CurTurn()+30,stationCode,''+race,'FHDINV|0');
+            59=if(!recordInfo)
+            60 ~{
+                01=ShipMoney(Player(),ShipMoney(Player())+buildCost);
+                02=MessageBox('The order could not be saved. All charged funds have been refunded.');
+                03=exit;
+            }
+            61=MessageBox('Investment confirmed.\n\nSystem: '+targetStarName+'\nStation: '+stationName+'\nOwner: '+raceName+'\nCompletion: '+GameDateTxtByTurn(CurTurn()+30)+'\nCost: '+buildCostText+' credits');
+        }
+        Open ~{
+            01=InterfaceState('StarMap','FHDBaseBuilderPaidOfferPanel',1);
+        }
+    }
+    FHDInvestmentCore ^{
+        HasPendingType ^{
+            01=int result=0;
+            02=for(int i=0;i<ShipCustomShipInfosCount(Player());i=i+1)
+            03 ~{
+                01=str marker=ShipCustomShipInfoTextData(Player(),i,3);
+                02=if(findsubstr(marker,'FHDINV|')!=0)continue;
+                03=int status=ShipCustomShipInfoData(Player(),i,1);
+                04=if((status==0 || status==3) && ShipCustomShipInfoData(Player(),i,2)==star_id && ShipCustomShipInfoTextData(Player(),i,1)==station_code){result=1;break;}
+            }
+        }
+        PendingCount ^{
+            01=int result=0;
+            02=for(int i=0;i<ShipCustomShipInfosCount(Player());i=i+1)
+            03 ~{
+                01=str marker=ShipCustomShipInfoTextData(Player(),i,3);
+                02=if(findsubstr(marker,'FHDINV|')!=0)continue;
+                03=int status=ShipCustomShipInfoData(Player(),i,1);
+                04=if((status==0 || status==3) && ShipCustomShipInfoData(Player(),i,2)==star_id)result=result+1;
+            }
+        }
+        ProcessRecord ^{
+            01=int status=ShipCustomShipInfoData(0,record_info,1);
+            02=int starId=ShipCustomShipInfoData(0,record_info,2);
+            03=dword star=GalaxyStar(starId-1);
+            04=str stationCode=ShipCustomShipInfoTextData(0,record_info,1);
+            05=int race=0+ShipCustomShipInfoTextData(0,record_info,2);
+            06=str stationName=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.FHDInvestmentCore.TypeName'),'station_code',stationCode,'result');
+            07=str raceName=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.FHDInvestmentCore.RaceName'),'race',race,'result');
+            08=if(status==0 || status==3)
+            09 ^{
+                01=if(CurTurn()<ShipCustomShipInfoData(0,record_info,3))exit;
+                02=if(!star)exit;
+                03=if(StarRuins(star)>=3 || StarRuins(star,stationCode))
+                04 ~{
+                    01=if(status!=3)Ether(10,'','Construction suspended\n\nThere is no available station slot in system '+StarName(star)+' for station '+stationName+'. The project will complete automatically when a slot becomes available.');
+                    02=ShipCustomShipInfoData(0,record_info,1,3);
+                    03=exit;
+                }
+                05=int stationType=t_SB; if(stationCode=='WB')stationType=t_WB; else if(stationCode=='RC')stationType=t_RC; else if(stationCode=='BK')stationType=t_BK; else if(stationCode=='PB')stationType=t_PB; else if(stationCode=='MC')stationType=t_MC; else if(stationCode=='CB')stationType=t_CB;
+                07=dword builtStation=BuildRuins(star,stationType);
+                08=if(!builtStation)
+                09 ~{
+                    01=if(status!=3)Ether(10,'','Construction of the station in system '+StarName(star)+' has been temporarily suspended. The project will be checked again on the next turn.');
+                    02=ShipCustomShipInfoData(0,record_info,1,3);
+                    03=exit;
+                }
+                10=ShipOwner(builtStation,race);
+                11=ShipPilotRace(builtStation,race);
+                12=for(int i=0;i<ShipItems(builtStation);i=i+1)if(ItemOwner(ShipItems(builtStation,i))!=race)ItemOwner(ShipItems(builtStation,i),race);
+                13=for(i=0;i<ShopItems(builtStation);i=i+1)if(ItemOwner(ShopItems(builtStation,i))!=race)ItemOwner(ShopItems(builtStation,i),race);
+                14=ShipCustomShipInfoData(0,record_info,1,1);
+                15=ShipCustomShipInfoData(0,record_info,3,CurTurn()+365);
+                16=ShipCustomShipInfoTextData(0,record_info,3,'FHDINV|'+Id(builtStation));
+                17=Ether(10,'','INVESTMENT PROJECT COMPLETED\n\nStation "'+Name(builtStation)+'» ('+stationName+', '+raceName+') in system '+StarName(star)+' has opened. Annual dividends will be 200,000 credits. First payment: '+GameDateTxtByTurn(CurTurn()+365)+'.');
+                18=exit;
+            }
+            10=str marker=ShipCustomShipInfoTextData(0,record_info,3);
+            11=dword activeStation=IdToShip(0+substr(marker,7));
+            12=if(!activeStation)
+            13 ~{
+                01=Ether(10,'','INVESTMENT PROPERTY LOST\n\nWe regret to inform you that station '+stationName+' in system '+StarName(star)+' was destroyed. Dividend payments have stopped. Investment involves risk, and of course no refunds are available. Have a nice day!');
+                02=ShipDeleteCustomShipInfo(0,record_info);
+                03=exit;
+            }
+            14=int legacyInfo=ShipFindCustomShipInfoByType(activeStation,'FHDInvestmentStation');
+            15=if(legacyInfo>=0)
+            16 ~{
+                01=ShipDeleteCustomShipInfo(activeStation,legacyInfo);
+                02=ShipCustomShipInfoData(0,record_info,3,CurTurn()+365);
+                03=Ether(10,'','Investment station "'+Name(activeStation)+'" has switched to annual dividends of 200,000 credits. First payment under the new schedule: '+GameDateTxtByTurn(CurTurn()+365)+'.');
+                04=exit;
+            }
+            17=int threat=StarEnemyThreatLevel(star);
+            18=if(threat>=3)
+            19 ~{
+                01=if(status==1){ShipCustomShipInfoData(0,record_info,1,2);Ether(10,'','Annual dividend payments suspended. System '+StarName(star)+' is under enemy control.');}
+                02=exit;
+            }
+            20=if(status==2)
+            21 ~{
+                01=ShipCustomShipInfoData(0,record_info,1,1);
+                02=Ether(10,'','Annual dividends from station "'+Name(activeStation)+'" in system '+StarName(star)+' have resumed.');
+            }
+            22=if(CurTurn()<ShipCustomShipInfoData(0,record_info,3))exit;
+            23=ShipMoney(Player(),ShipMoney(Player())+200000);
+            24=ShipCustomShipInfoData(0,record_info,3,CurTurn()+365);
+            25=Ether(10,'','ANNUAL DIVIDENDS PAID\n\nStation "'+Name(activeStation)+'" in system '+StarName(star)+' earned 200,000 credits. Next payment: '+GameDateTxtByTurn(CurTurn()+365)+'.');
+        }
+        RaceName ~{
+            01=str result='Humans';
+            02=if(race==0)result='Maloks';
+            03=else if(race==1)result='Pelengs';
+            04=else if(race==3)result='Feyans';
+            05=else if(race==4)result='Gaalians';
+        }
+        ResolveType ~{
+            01=str stationCode='SB';
+            02=int stationType=t_SB;
+            03=if(type_index==1){stationCode='WB';stationType=t_WB;}
+            04=else if(type_index==2){stationCode='RC';stationType=t_RC;}
+            05=else if(type_index==3){stationCode='BK';stationType=t_BK;}
+            06=else if(type_index==4){stationCode='PB';stationType=t_PB;}
+            07=else if(type_index==5){stationCode='MC';stationType=t_MC;}
+        }
+        TypeName ~{
+            01=str result='Science station';
+            02=if(station_code=='WB')result='Military base';
+            03=else if(station_code=='RC')result='Ranger Center';
+            04=else if(station_code=='BK')result='Business center';
+            05=else if(station_code=='PB')result='Pirate base';
+            06=else if(station_code=='MC')result='Medical center';
+            07=else if(station_code=='CB')result='Dominion';
+        }
+    }
+}
+ShipInfo ^{
+    AddInfo ^{
+        CustomInfos ^{
+            FHDInvestmentRecord ^{
+                Description=NoShow
+                Icon=0
+                Name=
+                OnActCode ~{
+                    01=if(ScriptItemActionType(t_OnStep))ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.FHDInvestmentCore.ProcessRecord'),'record_info',CurInfo());
+                }
+                OnActCodeTypes=t_OnStep
+                OnActStepTypes=0
+            }
+            FHDInvestmentStation ~{
+                Description=NoShow
+                Icon=0
+                Name=
+            }
+        }
+    }
+}

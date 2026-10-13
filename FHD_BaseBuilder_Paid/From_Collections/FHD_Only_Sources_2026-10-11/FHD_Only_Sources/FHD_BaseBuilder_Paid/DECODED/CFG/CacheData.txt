@@ -1,0 +1,14 @@
+Bm ^{
+    FHDBaseBuilder ^{
+        2InvestA=Mods\FHD_MODS\FHD_BaseBuilder_Paid\DATA\Interface\2InvestA.gi
+        2InvestD=Mods\FHD_MODS\FHD_BaseBuilder_Paid\DATA\Interface\2InvestD.gi
+        2InvestN=Mods\FHD_MODS\FHD_BaseBuilder_Paid\DATA\Interface\2InvestN.gi
+        OfferBtnA=Mods\FHD_MODS\FHD_BaseBuilder_Paid\DATA\Interface\OfferBtnA.gi
+        OfferBtnD=Mods\FHD_MODS\FHD_BaseBuilder_Paid\DATA\Interface\OfferBtnD.gi
+        OfferBtnN=Mods\FHD_MODS\FHD_BaseBuilder_Paid\DATA\Interface\OfferBtnN.gi
+        TabBtnA=Mods\FHD_MODS\FHD_BaseBuilder_Paid\DATA\Interface\TabBtnA.gi
+        TabBtnD=Mods\FHD_MODS\FHD_BaseBuilder_Paid\DATA\Interface\TabBtnD.gi
+        TabBtnN=Mods\FHD_MODS\FHD_BaseBuilder_Paid\DATA\Interface\TabBtnN.gi
+        TabBtnN=Mods\FHD_MODS\FHD_BaseBuilder_Paid\DATA\Interface\TabBtnN.gi
+    }
+}

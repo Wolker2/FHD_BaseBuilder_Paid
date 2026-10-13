@@ -1,0 +1,1664 @@
+{
+  "format": "blockpar",
+  "header_key": 837338762,
+  "new_format": true,
+  "seed": 1369621460,
+  "sha256": "6aa1612e8e975804872a86caa57d2b1531bc951e15a4fbbb793a3d65731b896f",
+  "tree": {
+    "sorted": true,
+    "entries": [
+      {
+        "name": "Help",
+        "block": {
+          "sorted": false,
+          "entries": [
+            {
+              "name": "FHDBaseBuilderPaidOpen",
+              "value": "Open the Coalition Central Investment Business Center"
+            }
+          ]
+        },
+        "metadata": [
+          0,
+          1
+        ]
+      },
+      {
+        "name": "Script",
+        "block": {
+          "sorted": true,
+          "entries": [
+            {
+              "name": "FHDBaseBuilderPaid",
+              "block": {
+                "sorted": true,
+                "entries": [
+                  {
+                    "name": "BeginOrder",
+                    "block": {
+                      "sorted": true,
+                      "entries": [
+                        {
+                          "name": "01",
+                          "value": "unknown typeNames=newarray(6);",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "02",
+                          "value": "typeNames[0]='Science station';",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "03",
+                          "value": "typeNames[1]='Military base';",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "04",
+                          "value": "typeNames[2]='Ranger Center';",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "05",
+                          "value": "typeNames[3]='Business center';",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "06",
+                          "value": "typeNames[4]='Pirate base';",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "07",
+                          "value": "typeNames[5]='Medical center';",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "08",
+                          "value": "int typeIndex=ListBox('Choose the type of investment station:',typeNames);",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "09",
+                          "value": "if(typeIndex<0)",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "10",
+                          "block": {
+                            "sorted": false,
+                            "entries": [
+                              {
+                                "name": "01",
+                                "value": "free(typeNames);"
+                              },
+                              {
+                                "name": "02",
+                                "value": "exit;"
+                              }
+                            ]
+                          },
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "11",
+                          "value": "str stationName=typeNames[typeIndex];",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "12",
+                          "value": "free(typeNames);",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "13",
+                          "value": "str stationCode=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.FHDInvestmentCore.ResolveType'),'type_index',typeIndex,'stationCode');",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "14",
+                          "value": "int raceIndex=-1;",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "15",
+                          "value": "int race=-1;",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "16",
+                          "value": "str raceName='';",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "17",
+                          "value": "if(typeIndex==0)",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "18",
+                          "block": {
+                            "sorted": false,
+                            "entries": [
+                              {
+                                "name": "01",
+                                "value": "unknown raceNamesSB=newarray(2);"
+                              },
+                              {
+                                "name": "02",
+                                "value": "raceNamesSB[0]='Gaalians'; raceNamesSB[1]='Feyans';"
+                              },
+                              {
+                                "name": "03",
+                                "value": "raceIndex=ListBox('Choose the owner race for station \"'+stationName+'»:',raceNamesSB);"
+                              },
+                              {
+                                "name": "04",
+                                "value": "if(raceIndex>=0){raceName=raceNamesSB[raceIndex];if(raceIndex==0)race=4;else race=3;}"
+                              },
+                              {
+                                "name": "05",
+                                "value": "free(raceNamesSB);"
+                              }
+                            ]
+                          },
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "19",
+                          "value": "else if(typeIndex==1)",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "20",
+                          "block": {
+                            "sorted": false,
+                            "entries": [
+                              {
+                                "name": "01",
+                                "value": "unknown raceNamesWB=newarray(2);"
+                              },
+                              {
+                                "name": "02",
+                                "value": "raceNamesWB[0]='Maloks'; raceNamesWB[1]='Pelengs';"
+                              },
+                              {
+                                "name": "03",
+                                "value": "raceIndex=ListBox('Choose the owner race for station \"'+stationName+'»:',raceNamesWB);"
+                              },
+                              {
+                                "name": "04",
+                                "value": "if(raceIndex>=0){raceName=raceNamesWB[raceIndex];if(raceIndex==0)race=0;else race=1;}"
+                              },
+                              {
+                                "name": "05",
+                                "value": "free(raceNamesWB);"
+                              }
+                            ]
+                          },
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "21",
+                          "value": "else if(typeIndex==2)",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "22",
+                          "block": {
+                            "sorted": false,
+                            "entries": [
+                              {
+                                "name": "01",
+                                "value": "unknown raceNamesRC=newarray(2);"
+                              },
+                              {
+                                "name": "02",
+                                "value": "raceNamesRC[0]='Feyans'; raceNamesRC[1]='Gaalians';"
+                              },
+                              {
+                                "name": "03",
+                                "value": "raceIndex=ListBox('Choose the owner race for station \"'+stationName+'»:',raceNamesRC);"
+                              },
+                              {
+                                "name": "04",
+                                "value": "if(raceIndex>=0){raceName=raceNamesRC[raceIndex];if(raceIndex==0)race=3;else race=4;}"
+                              },
+                              {
+                                "name": "05",
+                                "value": "free(raceNamesRC);"
+                              }
+                            ]
+                          },
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "23",
+                          "value": "else if(typeIndex==3)",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "24",
+                          "block": {
+                            "sorted": false,
+                            "entries": [
+                              {
+                                "name": "01",
+                                "value": "unknown raceNamesBK=newarray(1);"
+                              },
+                              {
+                                "name": "02",
+                                "value": "raceNamesBK[0]='Humans';"
+                              },
+                              {
+                                "name": "03",
+                                "value": "raceIndex=ListBox('Choose the owner race for station \"'+stationName+'»:',raceNamesBK);"
+                              },
+                              {
+                                "name": "04",
+                                "value": "if(raceIndex>=0){raceName=raceNamesBK[raceIndex];race=2;}"
+                              },
+                              {
+                                "name": "05",
+                                "value": "free(raceNamesBK);"
+                              }
+                            ]
+                          },
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "25",
+                          "value": "else if(typeIndex==4)",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "26",
+                          "block": {
+                            "sorted": false,
+                            "entries": [
+                              {
+                                "name": "01",
+                                "value": "unknown raceNamesPB=newarray(2);"
+                              },
+                              {
+                                "name": "02",
+                                "value": "raceNamesPB[0]='Pelengs'; raceNamesPB[1]='Humans';"
+                              },
+                              {
+                                "name": "03",
+                                "value": "raceIndex=ListBox('Choose the owner race for station \"'+stationName+'»:',raceNamesPB);"
+                              },
+                              {
+                                "name": "04",
+                                "value": "if(raceIndex>=0){raceName=raceNamesPB[raceIndex];if(raceIndex==0)race=1;else race=2;}"
+                              },
+                              {
+                                "name": "05",
+                                "value": "free(raceNamesPB);"
+                              }
+                            ]
+                          },
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "27",
+                          "value": "else",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "28",
+                          "block": {
+                            "sorted": false,
+                            "entries": [
+                              {
+                                "name": "01",
+                                "value": "unknown raceNamesMC=newarray(1);"
+                              },
+                              {
+                                "name": "02",
+                                "value": "raceNamesMC[0]='Gaalians';"
+                              },
+                              {
+                                "name": "03",
+                                "value": "raceIndex=ListBox('Choose the owner race for station \"'+stationName+'»:',raceNamesMC);"
+                              },
+                              {
+                                "name": "04",
+                                "value": "if(raceIndex>=0){raceName=raceNamesMC[raceIndex];race=4;}"
+                              },
+                              {
+                                "name": "05",
+                                "value": "free(raceNamesMC);"
+                              }
+                            ]
+                          },
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "29",
+                          "value": "if(raceIndex<0)exit;",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "37",
+                          "value": "unknown starObjects=newarray(1);",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "38",
+                          "value": "unknown starNames=newarray(1);",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "39",
+                          "value": "int starCount=0;",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "40",
+                          "value": "for(int i=0;i<GalaxyStars();i=i+1)",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "41",
+                          "block": {
+                            "sorted": true,
+                            "entries": [
+                              {
+                                "name": "01",
+                                "value": "dword star=GalaxyStar(i);",
+                                "metadata": [
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "02",
+                                "value": "if(!star)continue;",
+                                "metadata": [
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "03",
+                                "value": "if(!SectorVisible(StarToCon(star)))continue;",
+                                "metadata": [
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "04",
+                                "value": "int pending=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.FHDInvestmentCore.PendingCount'),'star_id',Id(star),'result');",
+                                "metadata": [
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "05",
+                                "value": "if(StarRuins(star)+pending>=3)continue;",
+                                "metadata": [
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "06",
+                                "value": "if(StarRuins(star,stationCode))continue;",
+                                "metadata": [
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "07",
+                                "value": "if(ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.FHDInvestmentCore.HasPendingType'),'star_id',Id(star),'station_code',stationCode,'result'))continue;",
+                                "metadata": [
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "08",
+                                "value": "if(!starCount)",
+                                "metadata": [
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "09",
+                                "block": {
+                                  "sorted": false,
+                                  "entries": [
+                                    {
+                                      "name": "01",
+                                      "value": "starObjects[0]=star;"
+                                    },
+                                    {
+                                      "name": "02",
+                                      "value": "starNames[0]=StarName(star);"
+                                    },
+                                    {
+                                      "name": "03",
+                                      "value": "starCount=1;"
+                                    }
+                                  ]
+                                },
+                                "metadata": [
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "10",
+                                "value": "else",
+                                "metadata": [
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "11",
+                                "block": {
+                                  "sorted": false,
+                                  "entries": [
+                                    {
+                                      "name": "01",
+                                      "value": "ArrayAdd(starObjects,star);"
+                                    },
+                                    {
+                                      "name": "02",
+                                      "value": "ArrayAdd(starNames,StarName(star));"
+                                    },
+                                    {
+                                      "name": "03",
+                                      "value": "starCount=starCount+1;"
+                                    }
+                                  ]
+                                },
+                                "metadata": [
+                                  0,
+                                  1
+                                ]
+                              }
+                            ]
+                          },
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "42",
+                          "value": "if(!starCount)",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "43",
+                          "block": {
+                            "sorted": false,
+                            "entries": [
+                              {
+                                "name": "01",
+                                "value": "free(starObjects);"
+                              },
+                              {
+                                "name": "02",
+                                "value": "free(starNames);"
+                              },
+                              {
+                                "name": "03",
+                                "value": "MessageBox('No suitable explored systems: the three-station limit has been reached, or a station of this type already exists or has been ordered.');"
+                              },
+                              {
+                                "name": "04",
+                                "value": "exit;"
+                              }
+                            ]
+                          },
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "44",
+                          "value": "if(starCount>1)ArraySort(starNames,starObjects);",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "45",
+                          "value": "int starIndex=ListBox('Choose an explored system. Systems without available station slots are hidden:',starNames);",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "46",
+                          "value": "if(starIndex<0)",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "47",
+                          "block": {
+                            "sorted": false,
+                            "entries": [
+                              {
+                                "name": "01",
+                                "value": "free(starObjects);"
+                              },
+                              {
+                                "name": "02",
+                                "value": "free(starNames);"
+                              },
+                              {
+                                "name": "03",
+                                "value": "exit;"
+                              }
+                            ]
+                          },
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "48",
+                          "value": "dword targetStar=starObjects[starIndex];",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "49",
+                          "value": "str targetStarName=StarName(targetStar);",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "50",
+                          "value": "free(starObjects);",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "51",
+                          "value": "free(starNames);",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "52",
+                          "value": "int investmentCount=0;for(int j=0;j<ShipCustomShipInfosCount(Player());j=j+1){str investmentMarker=ShipCustomShipInfoTextData(Player(),j,3);if(findsubstr(investmentMarker,'FHDINV|')==0)investmentCount=investmentCount+1;}int buildCost=1500000;str buildCostText='1 500 000';if(investmentCount==1){buildCost=2000000;buildCostText='2 000 000';}else if(investmentCount==2){buildCost=2500000;buildCostText='2 500 000';}else if(investmentCount==3){buildCost=3000000;buildCostText='3 000 000';}else if(investmentCount==4){buildCost=3500000;buildCostText='3 500 000';}else if(investmentCount>=5){buildCost=4000000;buildCostText='4 000 000';}",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "53",
+                          "value": "str summary='INVESTMENT PROJECT\\n\\nSystem: '+targetStarName+'\\nStation: '+stationName+'\\nOwner: '+raceName+'\\nConstruction time: 30 days\\nCompletion date: '+GameDateTxtByTurn(CurTurn()+30)+'\\nCost: '+buildCostText+' credits';",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "54",
+                          "value": "unknown confirmActions=newarray(3); confirmActions[0]='Confirm investment'; confirmActions[1]=' '; confirmActions[2]='Captain, cancel. I have changed my mind'; int confirm=ListBox(summary,confirmActions); free(confirmActions); if(confirm!=0)exit;",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "55",
+                          "value": "if(ShipMoney(Player())<buildCost)",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "56",
+                          "block": {
+                            "sorted": false,
+                            "entries": [
+                              {
+                                "name": "01",
+                                "value": "MessageBox('Insufficient credits. To make this investment you need '+buildCostText+' credits.');"
+                              },
+                              {
+                                "name": "02",
+                                "value": "exit;"
+                              }
+                            ]
+                          },
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "57",
+                          "value": "ShipMoney(Player(),ShipMoney(Player())-buildCost);",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "58",
+                          "value": "dword recordInfo=ShipAddCustomShipInfo(Player(),'FHDInvestmentRecord','NoShow',0,Id(targetStar),CurTurn()+30,stationCode,''+race,'FHDINV|0');",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "59",
+                          "value": "if(!recordInfo)",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "60",
+                          "block": {
+                            "sorted": false,
+                            "entries": [
+                              {
+                                "name": "01",
+                                "value": "ShipMoney(Player(),ShipMoney(Player())+buildCost);"
+                              },
+                              {
+                                "name": "02",
+                                "value": "MessageBox('The order could not be saved. All charged funds have been refunded.');"
+                              },
+                              {
+                                "name": "03",
+                                "value": "exit;"
+                              }
+                            ]
+                          },
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "61",
+                          "value": "MessageBox('Investment confirmed.\\n\\nSystem: '+targetStarName+'\\nStation: '+stationName+'\\nOwner: '+raceName+'\\nCompletion: '+GameDateTxtByTurn(CurTurn()+30)+'\\nCost: '+buildCostText+' credits');",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        }
+                      ]
+                    },
+                    "metadata": [
+                      0,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "Open",
+                    "block": {
+                      "sorted": false,
+                      "entries": [
+                        {
+                          "name": "01",
+                          "value": "InterfaceState('StarMap','FHDBaseBuilderPaidOfferPanel',1);"
+                        }
+                      ]
+                    },
+                    "metadata": [
+                      0,
+                      1
+                    ]
+                  }
+                ]
+              },
+              "metadata": [
+                0,
+                1
+              ]
+            },
+            {
+              "name": "FHDInvestmentCore",
+              "block": {
+                "sorted": true,
+                "entries": [
+                  {
+                    "name": "HasPendingType",
+                    "block": {
+                      "sorted": true,
+                      "entries": [
+                        {
+                          "name": "01",
+                          "value": "int result=0;",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "02",
+                          "value": "for(int i=0;i<ShipCustomShipInfosCount(Player());i=i+1)",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "03",
+                          "block": {
+                            "sorted": false,
+                            "entries": [
+                              {
+                                "name": "01",
+                                "value": "str marker=ShipCustomShipInfoTextData(Player(),i,3);"
+                              },
+                              {
+                                "name": "02",
+                                "value": "if(findsubstr(marker,'FHDINV|')!=0)continue;"
+                              },
+                              {
+                                "name": "03",
+                                "value": "int status=ShipCustomShipInfoData(Player(),i,1);"
+                              },
+                              {
+                                "name": "04",
+                                "value": "if((status==0 || status==3) && ShipCustomShipInfoData(Player(),i,2)==star_id && ShipCustomShipInfoTextData(Player(),i,1)==station_code){result=1;break;}"
+                              }
+                            ]
+                          },
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        }
+                      ]
+                    },
+                    "metadata": [
+                      0,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "PendingCount",
+                    "block": {
+                      "sorted": true,
+                      "entries": [
+                        {
+                          "name": "01",
+                          "value": "int result=0;",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "02",
+                          "value": "for(int i=0;i<ShipCustomShipInfosCount(Player());i=i+1)",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "03",
+                          "block": {
+                            "sorted": false,
+                            "entries": [
+                              {
+                                "name": "01",
+                                "value": "str marker=ShipCustomShipInfoTextData(Player(),i,3);"
+                              },
+                              {
+                                "name": "02",
+                                "value": "if(findsubstr(marker,'FHDINV|')!=0)continue;"
+                              },
+                              {
+                                "name": "03",
+                                "value": "int status=ShipCustomShipInfoData(Player(),i,1);"
+                              },
+                              {
+                                "name": "04",
+                                "value": "if((status==0 || status==3) && ShipCustomShipInfoData(Player(),i,2)==star_id)result=result+1;"
+                              }
+                            ]
+                          },
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        }
+                      ]
+                    },
+                    "metadata": [
+                      0,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "ProcessRecord",
+                    "block": {
+                      "sorted": true,
+                      "entries": [
+                        {
+                          "name": "01",
+                          "value": "int status=ShipCustomShipInfoData(0,record_info,1);",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "02",
+                          "value": "int starId=ShipCustomShipInfoData(0,record_info,2);",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "03",
+                          "value": "dword star=GalaxyStar(starId-1);",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "04",
+                          "value": "str stationCode=ShipCustomShipInfoTextData(0,record_info,1);",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "05",
+                          "value": "int race=0+ShipCustomShipInfoTextData(0,record_info,2);",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "06",
+                          "value": "str stationName=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.FHDInvestmentCore.TypeName'),'station_code',stationCode,'result');",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "07",
+                          "value": "str raceName=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.FHDInvestmentCore.RaceName'),'race',race,'result');",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "08",
+                          "value": "if(status==0 || status==3)",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "09",
+                          "block": {
+                            "sorted": true,
+                            "entries": [
+                              {
+                                "name": "01",
+                                "value": "if(CurTurn()<ShipCustomShipInfoData(0,record_info,3))exit;",
+                                "metadata": [
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "02",
+                                "value": "if(!star)exit;",
+                                "metadata": [
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "03",
+                                "value": "if(StarRuins(star)>=3 || StarRuins(star,stationCode))",
+                                "metadata": [
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "04",
+                                "block": {
+                                  "sorted": false,
+                                  "entries": [
+                                    {
+                                      "name": "01",
+                                      "value": "if(status!=3)Ether(10,'','Construction suspended\\n\\nThere is no available station slot in system '+StarName(star)+' for station '+stationName+'. The project will complete automatically when a slot becomes available.');"
+                                    },
+                                    {
+                                      "name": "02",
+                                      "value": "ShipCustomShipInfoData(0,record_info,1,3);"
+                                    },
+                                    {
+                                      "name": "03",
+                                      "value": "exit;"
+                                    }
+                                  ]
+                                },
+                                "metadata": [
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "05",
+                                "value": "int stationType=t_SB; if(stationCode=='WB')stationType=t_WB; else if(stationCode=='RC')stationType=t_RC; else if(stationCode=='BK')stationType=t_BK; else if(stationCode=='PB')stationType=t_PB; else if(stationCode=='MC')stationType=t_MC; else if(stationCode=='CB')stationType=t_CB;",
+                                "metadata": [
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "07",
+                                "value": "dword builtStation=BuildRuins(star,stationType);",
+                                "metadata": [
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "08",
+                                "value": "if(!builtStation)",
+                                "metadata": [
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "09",
+                                "block": {
+                                  "sorted": false,
+                                  "entries": [
+                                    {
+                                      "name": "01",
+                                      "value": "if(status!=3)Ether(10,'','Construction of the station in system '+StarName(star)+' has been temporarily suspended. The project will be checked again on the next turn.');"
+                                    },
+                                    {
+                                      "name": "02",
+                                      "value": "ShipCustomShipInfoData(0,record_info,1,3);"
+                                    },
+                                    {
+                                      "name": "03",
+                                      "value": "exit;"
+                                    }
+                                  ]
+                                },
+                                "metadata": [
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "10",
+                                "value": "ShipOwner(builtStation,race);",
+                                "metadata": [
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "11",
+                                "value": "ShipPilotRace(builtStation,race);",
+                                "metadata": [
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "12",
+                                "value": "for(int i=0;i<ShipItems(builtStation);i=i+1)if(ItemOwner(ShipItems(builtStation,i))!=race)ItemOwner(ShipItems(builtStation,i),race);",
+                                "metadata": [
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "13",
+                                "value": "for(i=0;i<ShopItems(builtStation);i=i+1)if(ItemOwner(ShopItems(builtStation,i))!=race)ItemOwner(ShopItems(builtStation,i),race);",
+                                "metadata": [
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "14",
+                                "value": "ShipCustomShipInfoData(0,record_info,1,1);",
+                                "metadata": [
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "15",
+                                "value": "ShipCustomShipInfoData(0,record_info,3,CurTurn()+365);",
+                                "metadata": [
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "16",
+                                "value": "ShipCustomShipInfoTextData(0,record_info,3,'FHDINV|'+Id(builtStation));",
+                                "metadata": [
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "17",
+                                "value": "Ether(10,'','INVESTMENT PROJECT COMPLETED\\n\\nStation \"'+Name(builtStation)+'» ('+stationName+', '+raceName+') in system '+StarName(star)+' has opened. Annual dividends will be 200,000 credits. First payment: '+GameDateTxtByTurn(CurTurn()+365)+'.');",
+                                "metadata": [
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "18",
+                                "value": "exit;",
+                                "metadata": [
+                                  0,
+                                  1
+                                ]
+                              }
+                            ]
+                          },
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "10",
+                          "value": "str marker=ShipCustomShipInfoTextData(0,record_info,3);",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "11",
+                          "value": "dword activeStation=IdToShip(0+substr(marker,7));",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "12",
+                          "value": "if(!activeStation)",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "13",
+                          "block": {
+                            "sorted": false,
+                            "entries": [
+                              {
+                                "name": "01",
+                                "value": "Ether(10,'','INVESTMENT PROPERTY LOST\\n\\nWe regret to inform you that station '+stationName+' in system '+StarName(star)+' was destroyed. Dividend payments have stopped. Investment involves risk, and of course no refunds are available. Have a nice day!');"
+                              },
+                              {
+                                "name": "02",
+                                "value": "ShipDeleteCustomShipInfo(0,record_info);"
+                              },
+                              {
+                                "name": "03",
+                                "value": "exit;"
+                              }
+                            ]
+                          },
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "14",
+                          "value": "int legacyInfo=ShipFindCustomShipInfoByType(activeStation,'FHDInvestmentStation');",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "15",
+                          "value": "if(legacyInfo>=0)",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "16",
+                          "block": {
+                            "sorted": false,
+                            "entries": [
+                              {
+                                "name": "01",
+                                "value": "ShipDeleteCustomShipInfo(activeStation,legacyInfo);"
+                              },
+                              {
+                                "name": "02",
+                                "value": "ShipCustomShipInfoData(0,record_info,3,CurTurn()+365);"
+                              },
+                              {
+                                "name": "03",
+                                "value": "Ether(10,'','Investment station \"'+Name(activeStation)+'\" has switched to annual dividends of 200,000 credits. First payment under the new schedule: '+GameDateTxtByTurn(CurTurn()+365)+'.');"
+                              },
+                              {
+                                "name": "04",
+                                "value": "exit;"
+                              }
+                            ]
+                          },
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "17",
+                          "value": "int threat=StarEnemyThreatLevel(star);",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "18",
+                          "value": "if(threat>=3)",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "19",
+                          "block": {
+                            "sorted": false,
+                            "entries": [
+                              {
+                                "name": "01",
+                                "value": "if(status==1){ShipCustomShipInfoData(0,record_info,1,2);Ether(10,'','Annual dividend payments suspended. System '+StarName(star)+' is under enemy control.');}"
+                              },
+                              {
+                                "name": "02",
+                                "value": "exit;"
+                              }
+                            ]
+                          },
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "20",
+                          "value": "if(status==2)",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "21",
+                          "block": {
+                            "sorted": false,
+                            "entries": [
+                              {
+                                "name": "01",
+                                "value": "ShipCustomShipInfoData(0,record_info,1,1);"
+                              },
+                              {
+                                "name": "02",
+                                "value": "Ether(10,'','Annual dividends from station \"'+Name(activeStation)+'\" in system '+StarName(star)+' have resumed.');"
+                              }
+                            ]
+                          },
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "22",
+                          "value": "if(CurTurn()<ShipCustomShipInfoData(0,record_info,3))exit;",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "23",
+                          "value": "ShipMoney(Player(),ShipMoney(Player())+200000);",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "24",
+                          "value": "ShipCustomShipInfoData(0,record_info,3,CurTurn()+365);",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "25",
+                          "value": "Ether(10,'','ANNUAL DIVIDENDS PAID\\n\\nStation \"'+Name(activeStation)+'\" in system '+StarName(star)+' earned 200,000 credits. Next payment: '+GameDateTxtByTurn(CurTurn()+365)+'.');",
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        }
+                      ]
+                    },
+                    "metadata": [
+                      0,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "RaceName",
+                    "block": {
+                      "sorted": false,
+                      "entries": [
+                        {
+                          "name": "01",
+                          "value": "str result='Humans';"
+                        },
+                        {
+                          "name": "02",
+                          "value": "if(race==0)result='Maloks';"
+                        },
+                        {
+                          "name": "03",
+                          "value": "else if(race==1)result='Pelengs';"
+                        },
+                        {
+                          "name": "04",
+                          "value": "else if(race==3)result='Feyans';"
+                        },
+                        {
+                          "name": "05",
+                          "value": "else if(race==4)result='Gaalians';"
+                        }
+                      ]
+                    },
+                    "metadata": [
+                      0,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "ResolveType",
+                    "block": {
+                      "sorted": false,
+                      "entries": [
+                        {
+                          "name": "01",
+                          "value": "str stationCode='SB';"
+                        },
+                        {
+                          "name": "02",
+                          "value": "int stationType=t_SB;"
+                        },
+                        {
+                          "name": "03",
+                          "value": "if(type_index==1){stationCode='WB';stationType=t_WB;}"
+                        },
+                        {
+                          "name": "04",
+                          "value": "else if(type_index==2){stationCode='RC';stationType=t_RC;}"
+                        },
+                        {
+                          "name": "05",
+                          "value": "else if(type_index==3){stationCode='BK';stationType=t_BK;}"
+                        },
+                        {
+                          "name": "06",
+                          "value": "else if(type_index==4){stationCode='PB';stationType=t_PB;}"
+                        },
+                        {
+                          "name": "07",
+                          "value": "else if(type_index==5){stationCode='MC';stationType=t_MC;}"
+                        }
+                      ]
+                    },
+                    "metadata": [
+                      0,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "TypeName",
+                    "block": {
+                      "sorted": false,
+                      "entries": [
+                        {
+                          "name": "01",
+                          "value": "str result='Science station';"
+                        },
+                        {
+                          "name": "02",
+                          "value": "if(station_code=='WB')result='Military base';"
+                        },
+                        {
+                          "name": "03",
+                          "value": "else if(station_code=='RC')result='Ranger Center';"
+                        },
+                        {
+                          "name": "04",
+                          "value": "else if(station_code=='BK')result='Business center';"
+                        },
+                        {
+                          "name": "05",
+                          "value": "else if(station_code=='PB')result='Pirate base';"
+                        },
+                        {
+                          "name": "06",
+                          "value": "else if(station_code=='MC')result='Medical center';"
+                        },
+                        {
+                          "name": "07",
+                          "value": "else if(station_code=='CB')result='Dominion';"
+                        }
+                      ]
+                    },
+                    "metadata": [
+                      0,
+                      1
+                    ]
+                  }
+                ]
+              },
+              "metadata": [
+                0,
+                1
+              ]
+            }
+          ]
+        },
+        "metadata": [
+          0,
+          1
+        ]
+      },
+      {
+        "name": "ShipInfo",
+        "block": {
+          "sorted": true,
+          "entries": [
+            {
+              "name": "AddInfo",
+              "block": {
+                "sorted": true,
+                "entries": [
+                  {
+                    "name": "CustomInfos",
+                    "block": {
+                      "sorted": true,
+                      "entries": [
+                        {
+                          "name": "FHDInvestmentRecord",
+                          "block": {
+                            "sorted": true,
+                            "entries": [
+                              {
+                                "name": "Description",
+                                "value": "NoShow",
+                                "metadata": [
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "Icon",
+                                "value": "0",
+                                "metadata": [
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "Name",
+                                "value": "",
+                                "metadata": [
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "OnActCode",
+                                "block": {
+                                  "sorted": false,
+                                  "entries": [
+                                    {
+                                      "name": "01",
+                                      "value": "if(ScriptItemActionType(t_OnStep))ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.FHDInvestmentCore.ProcessRecord'),'record_info',CurInfo());"
+                                    }
+                                  ]
+                                },
+                                "metadata": [
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "OnActCodeTypes",
+                                "value": "t_OnStep",
+                                "metadata": [
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "OnActStepTypes",
+                                "value": "0",
+                                "metadata": [
+                                  0,
+                                  1
+                                ]
+                              }
+                            ]
+                          },
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "FHDInvestmentStation",
+                          "block": {
+                            "sorted": false,
+                            "entries": [
+                              {
+                                "name": "Description",
+                                "value": "NoShow"
+                              },
+                              {
+                                "name": "Icon",
+                                "value": "0"
+                              },
+                              {
+                                "name": "Name",
+                                "value": ""
+                              }
+                            ]
+                          },
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        }
+                      ]
+                    },
+                    "metadata": [
+                      0,
+                      1
+                    ]
+                  }
+                ]
+              },
+              "metadata": [
+                0,
+                1
+              ]
+            }
+          ]
+        },
+        "metadata": [
+          0,
+          1
+        ]
+      }
+    ]
+  }
+}

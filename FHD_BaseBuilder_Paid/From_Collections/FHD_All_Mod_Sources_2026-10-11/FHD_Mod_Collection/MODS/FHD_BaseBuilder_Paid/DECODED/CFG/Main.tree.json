@@ -1,0 +1,1626 @@
+{
+  "format": "blockpar",
+  "header_key": 2984822409,
+  "new_format": true,
+  "seed": -1215181314,
+  "sha256": "005c40075f6a4b064edef451b7d9c9510bc3dff51b87ed3c99b06ed3af404245",
+  "tree": {
+    "sorted": true,
+    "entries": [
+      {
+        "name": "BV",
+        "block": {
+          "sorted": true,
+          "entries": [
+            {
+              "name": "OnLoad",
+              "block": {
+                "sorted": true,
+                "entries": [
+                  {
+                    "name": "Runtime",
+                    "block": {
+                      "sorted": false,
+                      "entries": []
+                    },
+                    "metadata": [
+                      0,
+                      1
+                    ]
+                  }
+                ]
+              },
+              "metadata": [
+                0,
+                1
+              ]
+            },
+            {
+              "name": "OnStart",
+              "block": {
+                "sorted": true,
+                "entries": [
+                  {
+                    "name": "0DayScripts",
+                    "block": {
+                      "sorted": false,
+                      "entries": []
+                    },
+                    "metadata": [
+                      0,
+                      1
+                    ]
+                  }
+                ]
+              },
+              "metadata": [
+                0,
+                1
+              ]
+            }
+          ]
+        },
+        "metadata": [
+          0,
+          1
+        ]
+      },
+      {
+        "name": "ML",
+        "block": {
+          "sorted": true,
+          "entries": [
+            {
+              "name": "StarMap",
+              "block": {
+                "sorted": true,
+                "entries": [
+                  {
+                    "name": "Panel",
+                    "block": {
+                      "sorted": true,
+                      "entries": [
+                        {
+                          "name": "FHDBaseBuilderPaidButton",
+                          "block": {
+                            "sorted": true,
+                            "entries": [
+                              {
+                                "name": "Panel",
+                                "block": {
+                                  "sorted": true,
+                                  "entries": [
+                                    {
+                                      "name": "GraphButton",
+                                      "block": {
+                                        "sorted": true,
+                                        "entries": [
+                                          {
+                                            "name": "Caption",
+                                            "value": "",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "CaptionAlignX",
+                                            "value": "Center",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "CaptionAlignY",
+                                            "value": "CenterEx",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "CaptionColorDown",
+                                            "value": "255,255,230",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "CaptionColorDownA",
+                                            "value": "255,255,230",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "CaptionColorNormal",
+                                            "value": "255,255,230",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "CaptionColorNormalA",
+                                            "value": "255,255,230",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "Font",
+                                            "value": "Font.2SmallBold",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "Help",
+                                            "value": "Help.FHDBaseBuilderPaidOpen",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "ImageDown",
+                                            "value": "GI,Bm.FHDBaseBuilder.2InvestD",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "ImageNormal",
+                                            "value": "GI,Bm.FHDBaseBuilder.2InvestN",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "ImageNormalA",
+                                            "value": "GI,Bm.FHDBaseBuilder.2InvestA",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "Kind",
+                                            "value": "Normal",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "KindHit",
+                                            "value": "Rect",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "MouseBlocking",
+                                            "value": "True",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "MouseBlockingTest",
+                                            "value": "False",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidButtonAction",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "OnPressCode",
+                                            "block": {
+                                              "sorted": false,
+                                              "entries": [
+                                                {
+                                                  "name": "00",
+                                                  "value": "ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.FHDBaseBuilderPaid.Open'));"
+                                                }
+                                              ]
+                                            },
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "Pos",
+                                            "value": "0,0,-1",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "Size",
+                                            "value": "32,32",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "Style",
+                                            "value": "Style.GB.SoundNormal",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      "metadata": [
+                                        0,
+                                        1
+                                      ]
+                                    },
+                                    {
+                                      "name": "Name",
+                                      "value": "FHDBaseBuilderPaidButton",
+                                      "metadata": [
+                                        0,
+                                        1
+                                      ]
+                                    },
+                                    {
+                                      "name": "Pos",
+                                      "value": "4,108,-100",
+                                      "metadata": [
+                                        0,
+                                        1
+                                      ]
+                                    },
+                                    {
+                                      "name": "Size",
+                                      "value": "32,32",
+                                      "metadata": [
+                                        0,
+                                        1
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "metadata": [
+                                  0,
+                                  1
+                                ]
+                              }
+                            ]
+                          },
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "name": "FHDBaseBuilderPaidOfferContainer",
+                          "block": {
+                            "sorted": true,
+                            "entries": [
+                              {
+                                "name": "Window",
+                                "block": {
+                                  "sorted": true,
+                                  "entries": [
+                                    {
+                                      "name": "Active",
+                                      "value": "False",
+                                      "metadata": [
+                                        0,
+                                        1
+                                      ]
+                                    },
+                                    {
+                                      "name": "GraphButton",
+                                      "block": {
+                                        "sorted": true,
+                                        "entries": [
+                                          {
+                                            "name": "Caption",
+                                            "value": "1. Конечно! За такое предложение нужно хвататься обеими руками!",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "CaptionAlignX",
+                                            "value": "Center",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "CaptionAlignY",
+                                            "value": "CenterEx",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "CaptionColorDown",
+                                            "value": "255,255,230",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "CaptionColorDownA",
+                                            "value": "255,255,230",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "CaptionColorNormal",
+                                            "value": "255,255,230",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "CaptionColorNormalA",
+                                            "value": "255,255,230",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "Font",
+                                            "value": "Font.2SmallBold",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "ImageDown",
+                                            "value": "GI,Bm.FHDBaseBuilder.OfferBtnD",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "ImageNormal",
+                                            "value": "GI,Bm.FHDBaseBuilder.OfferBtnN",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "ImageNormalA",
+                                            "value": "GI,Bm.FHDBaseBuilder.OfferBtnA",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "Kind",
+                                            "value": "Normal",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "KindHit",
+                                            "value": "Rect",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "MouseBlocking",
+                                            "value": "True",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "MouseBlockingTest",
+                                            "value": "False",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferAccept",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "OnPressCode",
+                                            "block": {
+                                              "sorted": false,
+                                              "entries": [
+                                                {
+                                                  "name": "00",
+                                                  "value": "InterfaceState('StarMap','FHDBaseBuilderPaidOfferPanel',0);ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.FHDBaseBuilderPaid.BeginOrder'));"
+                                                }
+                                              ]
+                                            },
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "Pos",
+                                            "value": "34,538,-3",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "Size",
+                                            "value": "892,34",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "Style",
+                                            "value": "Style.GB.SoundNormal",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      "metadata": [
+                                        0,
+                                        2
+                                      ]
+                                    },
+                                    {
+                                      "name": "GraphButton",
+                                      "block": {
+                                        "sorted": true,
+                                        "entries": [
+                                          {
+                                            "name": "Caption",
+                                            "value": "2. Мне нужно подумать над вашим предложением.",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "CaptionAlignX",
+                                            "value": "Center",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "CaptionAlignY",
+                                            "value": "CenterEx",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "CaptionColorDown",
+                                            "value": "255,255,230",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "CaptionColorDownA",
+                                            "value": "255,255,230",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "CaptionColorNormal",
+                                            "value": "255,255,230",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "CaptionColorNormalA",
+                                            "value": "255,255,230",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "Font",
+                                            "value": "Font.2SmallBold",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "ImageDown",
+                                            "value": "GI,Bm.FHDBaseBuilder.OfferBtnD",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "ImageNormal",
+                                            "value": "GI,Bm.FHDBaseBuilder.OfferBtnN",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "ImageNormalA",
+                                            "value": "GI,Bm.FHDBaseBuilder.OfferBtnA",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "Kind",
+                                            "value": "Normal",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "KindHit",
+                                            "value": "Rect",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "MouseBlocking",
+                                            "value": "True",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "MouseBlockingTest",
+                                            "value": "False",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferDecline",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "OnPressCode",
+                                            "block": {
+                                              "sorted": false,
+                                              "entries": [
+                                                {
+                                                  "name": "00",
+                                                  "value": "InterfaceState('StarMap','FHDBaseBuilderPaidOfferPanel',0);"
+                                                }
+                                              ]
+                                            },
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "Pos",
+                                            "value": "34,584,-3",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "Size",
+                                            "value": "892,34",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "name": "Style",
+                                            "value": "Style.GB.SoundNormal",
+                                            "metadata": [
+                                              0,
+                                              1
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      "metadata": [
+                                        1,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "name": "Label",
+                                      "block": {
+                                        "sorted": false,
+                                        "entries": [
+                                          {
+                                            "name": "AlignX",
+                                            "value": "Center"
+                                          },
+                                          {
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "name": "Font",
+                                            "value": "Font.2Ranger"
+                                          },
+                                          {
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferTitle"
+                                          },
+                                          {
+                                            "name": "Pos",
+                                            "value": "20,8,-2"
+                                          },
+                                          {
+                                            "name": "Size",
+                                            "value": "920,34"
+                                          },
+                                          {
+                                            "name": "Text",
+                                            "value": "Центральный Инвестиционный Бизнес-центр Коалиции"
+                                          },
+                                          {
+                                            "name": "TextColor",
+                                            "value": "88,229,255"
+                                          }
+                                        ]
+                                      },
+                                      "metadata": [
+                                        0,
+                                        19
+                                      ]
+                                    },
+                                    {
+                                      "name": "Label",
+                                      "block": {
+                                        "sorted": false,
+                                        "entries": [
+                                          {
+                                            "name": "AlignX",
+                                            "value": "Center"
+                                          },
+                                          {
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "name": "Font",
+                                            "value": "Font.2SmallBold"
+                                          },
+                                          {
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferGreeting"
+                                          },
+                                          {
+                                            "name": "Pos",
+                                            "value": "20,48,-2"
+                                          },
+                                          {
+                                            "name": "Size",
+                                            "value": "920,26"
+                                          },
+                                          {
+                                            "name": "Text",
+                                            "value": "Здравствуйте!"
+                                          },
+                                          {
+                                            "name": "TextColor",
+                                            "value": "255,215,100"
+                                          }
+                                        ]
+                                      },
+                                      "metadata": [
+                                        1,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "name": "Label",
+                                      "block": {
+                                        "sorted": false,
+                                        "entries": [
+                                          {
+                                            "name": "AlignX",
+                                            "value": "Left"
+                                          },
+                                          {
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "name": "Font",
+                                            "value": "Font.2Small"
+                                          },
+                                          {
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferLine01"
+                                          },
+                                          {
+                                            "name": "Pos",
+                                            "value": "34,82,-2"
+                                          },
+                                          {
+                                            "name": "Size",
+                                            "value": "892,23"
+                                          },
+                                          {
+                                            "name": "Text",
+                                            "value": "Вас приветствует \"Центральный Инвестиционный Бизнес-центр Коалиции\"."
+                                          },
+                                          {
+                                            "name": "TextColor",
+                                            "value": "255,255,230"
+                                          }
+                                        ]
+                                      },
+                                      "metadata": [
+                                        2,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "name": "Label",
+                                      "block": {
+                                        "sorted": false,
+                                        "entries": [
+                                          {
+                                            "name": "AlignX",
+                                            "value": "Left"
+                                          },
+                                          {
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "name": "Font",
+                                            "value": "Font.2Small"
+                                          },
+                                          {
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferLine02"
+                                          },
+                                          {
+                                            "name": "Pos",
+                                            "value": "34,107,-2"
+                                          },
+                                          {
+                                            "name": "Size",
+                                            "value": "892,23"
+                                          },
+                                          {
+                                            "name": "Text",
+                                            "value": "К вашему вниманию мы предлагаем уникальную возможность инвестировать ваши кредиты"
+                                          },
+                                          {
+                                            "name": "TextColor",
+                                            "value": "255,255,230"
+                                          }
+                                        ]
+                                      },
+                                      "metadata": [
+                                        3,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "name": "Label",
+                                      "block": {
+                                        "sorted": false,
+                                        "entries": [
+                                          {
+                                            "name": "AlignX",
+                                            "value": "Left"
+                                          },
+                                          {
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "name": "Font",
+                                            "value": "Font.2Small"
+                                          },
+                                          {
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferLine03"
+                                          },
+                                          {
+                                            "name": "Pos",
+                                            "value": "34,132,-2"
+                                          },
+                                          {
+                                            "name": "Size",
+                                            "value": "892,23"
+                                          },
+                                          {
+                                            "name": "Text",
+                                            "value": "в строительство суперсовременных космических станций!"
+                                          },
+                                          {
+                                            "name": "TextColor",
+                                            "value": "255,255,230"
+                                          }
+                                        ]
+                                      },
+                                      "metadata": [
+                                        4,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "name": "Label",
+                                      "block": {
+                                        "sorted": false,
+                                        "entries": [
+                                          {
+                                            "name": "AlignX",
+                                            "value": "Left"
+                                          },
+                                          {
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "name": "Font",
+                                            "value": "Font.2Small"
+                                          },
+                                          {
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferLine04"
+                                          },
+                                          {
+                                            "name": "Pos",
+                                            "value": "34,157,-2"
+                                          },
+                                          {
+                                            "name": "Size",
+                                            "value": "892,23"
+                                          },
+                                          {
+                                            "name": "Text",
+                                            "value": "Минимальная стоимость строительства — 1 500 000 кредитов. Каждая следующая станция"
+                                          },
+                                          {
+                                            "name": "TextColor",
+                                            "value": "255,255,230"
+                                          }
+                                        ]
+                                      },
+                                      "metadata": [
+                                        5,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "name": "Label",
+                                      "block": {
+                                        "sorted": false,
+                                        "entries": [
+                                          {
+                                            "name": "AlignX",
+                                            "value": "Left"
+                                          },
+                                          {
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "name": "Font",
+                                            "value": "Font.2Small"
+                                          },
+                                          {
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferLine05"
+                                          },
+                                          {
+                                            "name": "Pos",
+                                            "value": "34,182,-2"
+                                          },
+                                          {
+                                            "name": "Size",
+                                            "value": "892,23"
+                                          },
+                                          {
+                                            "name": "Text",
+                                            "value": "обойдётся на 500 000 кредитов дороже, но максимальная стоимость — 4 000 000 кредитов."
+                                          },
+                                          {
+                                            "name": "TextColor",
+                                            "value": "255,255,230"
+                                          }
+                                        ]
+                                      },
+                                      "metadata": [
+                                        6,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "name": "Label",
+                                      "block": {
+                                        "sorted": false,
+                                        "entries": [
+                                          {
+                                            "name": "AlignX",
+                                            "value": "Left"
+                                          },
+                                          {
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "name": "Font",
+                                            "value": "Font.2Small"
+                                          },
+                                          {
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferLine06"
+                                          },
+                                          {
+                                            "name": "Pos",
+                                            "value": "34,207,-2"
+                                          },
+                                          {
+                                            "name": "Size",
+                                            "value": "892,23"
+                                          },
+                                          {
+                                            "name": "Text",
+                                            "value": "После завершения строительства ваша инвестиция начнёт постепенно окупаться."
+                                          },
+                                          {
+                                            "name": "TextColor",
+                                            "value": "255,255,230"
+                                          }
+                                        ]
+                                      },
+                                      "metadata": [
+                                        7,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "name": "Label",
+                                      "block": {
+                                        "sorted": false,
+                                        "entries": [
+                                          {
+                                            "name": "AlignX",
+                                            "value": "Left"
+                                          },
+                                          {
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "name": "Font",
+                                            "value": "Font.2Small"
+                                          },
+                                          {
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferLine07"
+                                          },
+                                          {
+                                            "name": "Pos",
+                                            "value": "34,232,-2"
+                                          },
+                                          {
+                                            "name": "Size",
+                                            "value": "892,23"
+                                          },
+                                          {
+                                            "name": "Text",
+                                            "value": "Если, конечно, эту систему не захватят, а саму станцию не уничтожат..."
+                                          },
+                                          {
+                                            "name": "TextColor",
+                                            "value": "255,255,230"
+                                          }
+                                        ]
+                                      },
+                                      "metadata": [
+                                        8,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "name": "Label",
+                                      "block": {
+                                        "sorted": false,
+                                        "entries": [
+                                          {
+                                            "name": "AlignX",
+                                            "value": "Left"
+                                          },
+                                          {
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "name": "Font",
+                                            "value": "Font.2Small"
+                                          },
+                                          {
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferLine08"
+                                          },
+                                          {
+                                            "name": "Pos",
+                                            "value": "34,257,-2"
+                                          },
+                                          {
+                                            "name": "Size",
+                                            "value": "892,23"
+                                          },
+                                          {
+                                            "name": "Text",
+                                            "value": "Хи-хи-хи."
+                                          },
+                                          {
+                                            "name": "TextColor",
+                                            "value": "255,255,230"
+                                          }
+                                        ]
+                                      },
+                                      "metadata": [
+                                        9,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "name": "Label",
+                                      "block": {
+                                        "sorted": false,
+                                        "entries": [
+                                          {
+                                            "name": "AlignX",
+                                            "value": "Left"
+                                          },
+                                          {
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "name": "Font",
+                                            "value": "Font.2Small"
+                                          },
+                                          {
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferLine09"
+                                          },
+                                          {
+                                            "name": "Pos",
+                                            "value": "34,282,-2"
+                                          },
+                                          {
+                                            "name": "Size",
+                                            "value": "892,23"
+                                          },
+                                          {
+                                            "name": "Text",
+                                            "value": "Кхм... Прошу прощения. О чём это я?"
+                                          },
+                                          {
+                                            "name": "TextColor",
+                                            "value": "255,255,230"
+                                          }
+                                        ]
+                                      },
+                                      "metadata": [
+                                        10,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "name": "Label",
+                                      "block": {
+                                        "sorted": false,
+                                        "entries": [
+                                          {
+                                            "name": "AlignX",
+                                            "value": "Left"
+                                          },
+                                          {
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "name": "Font",
+                                            "value": "Font.2Small"
+                                          },
+                                          {
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferLine10"
+                                          },
+                                          {
+                                            "name": "Pos",
+                                            "value": "34,307,-2"
+                                          },
+                                          {
+                                            "name": "Size",
+                                            "value": "892,23"
+                                          },
+                                          {
+                                            "name": "Text",
+                                            "value": "Ах да! Прибыль!"
+                                          },
+                                          {
+                                            "name": "TextColor",
+                                            "value": "255,255,230"
+                                          }
+                                        ]
+                                      },
+                                      "metadata": [
+                                        11,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "name": "Label",
+                                      "block": {
+                                        "sorted": false,
+                                        "entries": [
+                                          {
+                                            "name": "AlignX",
+                                            "value": "Left"
+                                          },
+                                          {
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "name": "Font",
+                                            "value": "Font.2Small"
+                                          },
+                                          {
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferLine11"
+                                          },
+                                          {
+                                            "name": "Pos",
+                                            "value": "34,332,-2"
+                                          },
+                                          {
+                                            "name": "Size",
+                                            "value": "892,23"
+                                          },
+                                          {
+                                            "name": "Text",
+                                            "value": "После постройки станции вам будет начисляться:"
+                                          },
+                                          {
+                                            "name": "TextColor",
+                                            "value": "255,255,230"
+                                          }
+                                        ]
+                                      },
+                                      "metadata": [
+                                        12,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "name": "Label",
+                                      "block": {
+                                        "sorted": false,
+                                        "entries": [
+                                          {
+                                            "name": "AlignX",
+                                            "value": "Left"
+                                          },
+                                          {
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "name": "Font",
+                                            "value": "Font.2Small"
+                                          },
+                                          {
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferLine12"
+                                          },
+                                          {
+                                            "name": "Pos",
+                                            "value": "34,357,-2"
+                                          },
+                                          {
+                                            "name": "Size",
+                                            "value": "892,23"
+                                          },
+                                          {
+                                            "name": "Text",
+                                            "value": "- 200 000 кредитов каждый год, пока станция существует и находится"
+                                          },
+                                          {
+                                            "name": "TextColor",
+                                            "value": "255,255,230"
+                                          }
+                                        ]
+                                      },
+                                      "metadata": [
+                                        13,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "name": "Label",
+                                      "block": {
+                                        "sorted": false,
+                                        "entries": [
+                                          {
+                                            "name": "AlignX",
+                                            "value": "Left"
+                                          },
+                                          {
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "name": "Font",
+                                            "value": "Font.2Small"
+                                          },
+                                          {
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferLine13"
+                                          },
+                                          {
+                                            "name": "Pos",
+                                            "value": "34,382,-2"
+                                          },
+                                          {
+                                            "name": "Size",
+                                            "value": "892,23"
+                                          },
+                                          {
+                                            "name": "Text",
+                                            "value": "  на подконтрольной территории Коалиции."
+                                          },
+                                          {
+                                            "name": "TextColor",
+                                            "value": "255,255,230"
+                                          }
+                                        ]
+                                      },
+                                      "metadata": [
+                                        14,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "name": "Label",
+                                      "block": {
+                                        "sorted": false,
+                                        "entries": [
+                                          {
+                                            "name": "AlignX",
+                                            "value": "Left"
+                                          },
+                                          {
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "name": "Font",
+                                            "value": "Font.2Small"
+                                          },
+                                          {
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferLine14"
+                                          },
+                                          {
+                                            "name": "Pos",
+                                            "value": "34,407,-2"
+                                          },
+                                          {
+                                            "name": "Size",
+                                            "value": "892,23"
+                                          },
+                                          {
+                                            "name": "Text",
+                                            "value": "Стоимость зависит от количества действующих и строящихся инвестиционных станций."
+                                          },
+                                          {
+                                            "name": "TextColor",
+                                            "value": "255,255,230"
+                                          }
+                                        ]
+                                      },
+                                      "metadata": [
+                                        15,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "name": "Label",
+                                      "block": {
+                                        "sorted": false,
+                                        "entries": [
+                                          {
+                                            "name": "AlignX",
+                                            "value": "Left"
+                                          },
+                                          {
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "name": "Font",
+                                            "value": "Font.2Small"
+                                          },
+                                          {
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferLine15"
+                                          },
+                                          {
+                                            "name": "Pos",
+                                            "value": "34,432,-2"
+                                          },
+                                          {
+                                            "name": "Size",
+                                            "value": "892,23"
+                                          },
+                                          {
+                                            "name": "Text",
+                                            "value": "Первая станция окупается примерно за 7лет; последующие — дольше."
+                                          },
+                                          {
+                                            "name": "TextColor",
+                                            "value": "255,255,230"
+                                          }
+                                        ]
+                                      },
+                                      "metadata": [
+                                        16,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "name": "Label",
+                                      "block": {
+                                        "sorted": false,
+                                        "entries": [
+                                          {
+                                            "name": "AlignX",
+                                            "value": "Left"
+                                          },
+                                          {
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "name": "Font",
+                                            "value": "Font.2Small"
+                                          },
+                                          {
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferLine16"
+                                          },
+                                          {
+                                            "name": "Pos",
+                                            "value": "34,457,-2"
+                                          },
+                                          {
+                                            "name": "Size",
+                                            "value": "892,23"
+                                          },
+                                          {
+                                            "name": "Text",
+                                            "value": "Обеспечьте свою не долгую старость весомым копиталом ХА-ХА-ХА."
+                                          },
+                                          {
+                                            "name": "TextColor",
+                                            "value": "255,255,230"
+                                          }
+                                        ]
+                                      },
+                                      "metadata": [
+                                        17,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "name": "Label",
+                                      "block": {
+                                        "sorted": false,
+                                        "entries": [
+                                          {
+                                            "name": "AlignX",
+                                            "value": "Left"
+                                          },
+                                          {
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "name": "Font",
+                                            "value": "Font.2Small"
+                                          },
+                                          {
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferLine17"
+                                          },
+                                          {
+                                            "name": "Pos",
+                                            "value": "34,482,-2"
+                                          },
+                                          {
+                                            "name": "Size",
+                                            "value": "892,23"
+                                          },
+                                          {
+                                            "name": "Text",
+                                            "value": "Ну что? Вас заинтересовало наше скромное предложение?"
+                                          },
+                                          {
+                                            "name": "TextColor",
+                                            "value": "255,255,230"
+                                          }
+                                        ]
+                                      },
+                                      "metadata": [
+                                        18,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "name": "Modal",
+                                      "value": "True",
+                                      "metadata": [
+                                        0,
+                                        1
+                                      ]
+                                    },
+                                    {
+                                      "name": "MouseBlocking",
+                                      "value": "True",
+                                      "metadata": [
+                                        0,
+                                        1
+                                      ]
+                                    },
+                                    {
+                                      "name": "MouseBlockingTest",
+                                      "value": "True",
+                                      "metadata": [
+                                        0,
+                                        1
+                                      ]
+                                    },
+                                    {
+                                      "name": "Name",
+                                      "value": "FHDBaseBuilderPaidOfferPanel",
+                                      "metadata": [
+                                        0,
+                                        1
+                                      ]
+                                    },
+                                    {
+                                      "name": "Pos",
+                                      "value": "500,200,-300",
+                                      "metadata": [
+                                        0,
+                                        1
+                                      ]
+                                    },
+                                    {
+                                      "name": "Size",
+                                      "value": "960,640",
+                                      "metadata": [
+                                        0,
+                                        1
+                                      ]
+                                    },
+                                    {
+                                      "name": "Style",
+                                      "value": "Style.Window.2Normal",
+                                      "metadata": [
+                                        0,
+                                        1
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "metadata": [
+                                  0,
+                                  1
+                                ]
+                              }
+                            ]
+                          },
+                          "metadata": [
+                            0,
+                            1
+                          ]
+                        }
+                      ]
+                    },
+                    "metadata": [
+                      0,
+                      1
+                    ]
+                  }
+                ]
+              },
+              "metadata": [
+                0,
+                1
+              ]
+            }
+          ]
+        },
+        "metadata": [
+          0,
+          1
+        ]
+      }
+    ]
+  }
+}
