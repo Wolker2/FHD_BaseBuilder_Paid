@@ -1,0 +1,1884 @@
+{
+  "format": "blockpar",
+  "seed": -1215181314,
+  "root": {
+    "entries": [
+      {
+        "kind": "block",
+        "name": "BV",
+        "value": {
+          "entries": [
+            {
+              "kind": "block",
+              "name": "OnLoad",
+              "value": {
+                "entries": [
+                  {
+                    "kind": "block",
+                    "name": "Runtime",
+                    "value": {
+                      "entries": [],
+                      "sorted": false
+                    },
+                    "sort_meta": [
+                      0,
+                      1
+                    ]
+                  }
+                ],
+                "sorted": true
+              },
+              "sort_meta": [
+                0,
+                1
+              ]
+            },
+            {
+              "kind": "block",
+              "name": "OnStart",
+              "value": {
+                "entries": [
+                  {
+                    "kind": "block",
+                    "name": "0DayScripts",
+                    "value": {
+                      "entries": [],
+                      "sorted": false
+                    },
+                    "sort_meta": [
+                      0,
+                      1
+                    ]
+                  }
+                ],
+                "sorted": true
+              },
+              "sort_meta": [
+                0,
+                1
+              ]
+            }
+          ],
+          "sorted": true
+        },
+        "sort_meta": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "block",
+        "name": "ML",
+        "value": {
+          "entries": [
+            {
+              "kind": "block",
+              "name": "StarMap",
+              "value": {
+                "entries": [
+                  {
+                    "kind": "block",
+                    "name": "Panel",
+                    "value": {
+                      "entries": [
+                        {
+                          "kind": "block",
+                          "name": "FHDBaseBuilderPaidButton",
+                          "value": {
+                            "entries": [
+                              {
+                                "kind": "block",
+                                "name": "Panel",
+                                "value": {
+                                  "entries": [
+                                    {
+                                      "kind": "block",
+                                      "name": "GraphButton",
+                                      "value": {
+                                        "entries": [
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Caption",
+                                            "value": "",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "CaptionAlignX",
+                                            "value": "Center",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "CaptionAlignY",
+                                            "value": "CenterEx",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "CaptionColorDown",
+                                            "value": "255,255,230",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "CaptionColorDownA",
+                                            "value": "255,255,230",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "CaptionColorNormal",
+                                            "value": "255,255,230",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "CaptionColorNormalA",
+                                            "value": "255,255,230",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Font",
+                                            "value": "Font.2SmallBold",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Help",
+                                            "value": "Help.FHDBaseBuilderPaidOpen",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "ImageDown",
+                                            "value": "GI,Bm.FHDBaseBuilder.2InvestD",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "ImageNormal",
+                                            "value": "GI,Bm.FHDBaseBuilder.2InvestN",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "ImageNormalA",
+                                            "value": "GI,Bm.FHDBaseBuilder.2InvestA",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Kind",
+                                            "value": "Normal",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "KindHit",
+                                            "value": "Rect",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "MouseBlocking",
+                                            "value": "True",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "MouseBlockingTest",
+                                            "value": "False",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidButtonAction",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "block",
+                                            "name": "OnPressCode",
+                                            "value": {
+                                              "entries": [
+                                                {
+                                                  "kind": "parameter",
+                                                  "name": "00",
+                                                  "value": "ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.FHDBaseBuilderPaid.Open'));"
+                                                }
+                                              ],
+                                              "sorted": false
+                                            },
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Pos",
+                                            "value": "0,0,-1",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Size",
+                                            "value": "40,40",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Style",
+                                            "value": "Style.GB.SoundNormal",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          }
+                                        ],
+                                        "sorted": true
+                                      },
+                                      "sort_meta": [
+                                        0,
+                                        1
+                                      ]
+                                    },
+                                    {
+                                      "kind": "parameter",
+                                      "name": "Name",
+                                      "value": "FHDBaseBuilderPaidButton",
+                                      "sort_meta": [
+                                        0,
+                                        1
+                                      ]
+                                    },
+                                    {
+                                      "kind": "parameter",
+                                      "name": "Pos",
+                                      "value": "0,97,-100",
+                                      "sort_meta": [
+                                        0,
+                                        1
+                                      ]
+                                    },
+                                    {
+                                      "kind": "parameter",
+                                      "name": "Size",
+                                      "value": "40,40",
+                                      "sort_meta": [
+                                        0,
+                                        1
+                                      ]
+                                    }
+                                  ],
+                                  "sorted": true
+                                },
+                                "sort_meta": [
+                                  0,
+                                  1
+                                ]
+                              }
+                            ],
+                            "sorted": true
+                          },
+                          "sort_meta": [
+                            0,
+                            1
+                          ]
+                        },
+                        {
+                          "kind": "block",
+                          "name": "FHDBaseBuilderPaidOfferContainer",
+                          "value": {
+                            "entries": [
+                              {
+                                "kind": "block",
+                                "name": "Window",
+                                "value": {
+                                  "entries": [
+                                    {
+                                      "kind": "parameter",
+                                      "name": "Active",
+                                      "value": "False",
+                                      "sort_meta": [
+                                        0,
+                                        1
+                                      ]
+                                    },
+                                    {
+                                      "kind": "block",
+                                      "name": "GraphButton",
+                                      "value": {
+                                        "entries": [
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Caption",
+                                            "value": "1. Конечно! За такое предложение нужно хвататься обеими руками!",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "CaptionAlignX",
+                                            "value": "Center",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "CaptionAlignY",
+                                            "value": "CenterEx",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "CaptionColorDown",
+                                            "value": "255,255,230",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "CaptionColorDownA",
+                                            "value": "255,255,230",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "CaptionColorNormal",
+                                            "value": "255,255,230",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "CaptionColorNormalA",
+                                            "value": "255,255,230",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Font",
+                                            "value": "Font.2SmallBold",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "ImageDown",
+                                            "value": "GI,Bm.FHDBaseBuilder.OfferBtnD",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "ImageNormal",
+                                            "value": "GI,Bm.FHDBaseBuilder.OfferBtnN",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "ImageNormalA",
+                                            "value": "GI,Bm.FHDBaseBuilder.OfferBtnA",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Kind",
+                                            "value": "Normal",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "KindHit",
+                                            "value": "Rect",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "MouseBlocking",
+                                            "value": "True",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "MouseBlockingTest",
+                                            "value": "False",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferAccept",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "block",
+                                            "name": "OnPressCode",
+                                            "value": {
+                                              "entries": [
+                                                {
+                                                  "kind": "parameter",
+                                                  "name": "00",
+                                                  "value": "InterfaceState('StarMap','FHDBaseBuilderPaidOfferPanel',0);ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.FHDBaseBuilderPaid.BeginOrder'));"
+                                                }
+                                              ],
+                                              "sorted": false
+                                            },
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Pos",
+                                            "value": "34,538,-3",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Size",
+                                            "value": "892,34",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Style",
+                                            "value": "Style.GB.SoundNormal",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          }
+                                        ],
+                                        "sorted": true
+                                      },
+                                      "sort_meta": [
+                                        0,
+                                        2
+                                      ]
+                                    },
+                                    {
+                                      "kind": "block",
+                                      "name": "GraphButton",
+                                      "value": {
+                                        "entries": [
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Caption",
+                                            "value": "2. Мне нужно подумать над вашим предложением.",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "CaptionAlignX",
+                                            "value": "Center",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "CaptionAlignY",
+                                            "value": "CenterEx",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "CaptionColorDown",
+                                            "value": "255,255,230",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "CaptionColorDownA",
+                                            "value": "255,255,230",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "CaptionColorNormal",
+                                            "value": "255,255,230",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "CaptionColorNormalA",
+                                            "value": "255,255,230",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Font",
+                                            "value": "Font.2SmallBold",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "ImageDown",
+                                            "value": "GI,Bm.FHDBaseBuilder.OfferBtnD",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "ImageNormal",
+                                            "value": "GI,Bm.FHDBaseBuilder.OfferBtnN",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "ImageNormalA",
+                                            "value": "GI,Bm.FHDBaseBuilder.OfferBtnA",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Kind",
+                                            "value": "Normal",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "KindHit",
+                                            "value": "Rect",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "MouseBlocking",
+                                            "value": "True",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "MouseBlockingTest",
+                                            "value": "False",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferDecline",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "block",
+                                            "name": "OnPressCode",
+                                            "value": {
+                                              "entries": [
+                                                {
+                                                  "kind": "parameter",
+                                                  "name": "00",
+                                                  "value": "InterfaceState('StarMap','FHDBaseBuilderPaidOfferPanel',0);"
+                                                }
+                                              ],
+                                              "sorted": false
+                                            },
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Pos",
+                                            "value": "34,584,-3",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Size",
+                                            "value": "892,34",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Style",
+                                            "value": "Style.GB.SoundNormal",
+                                            "sort_meta": [
+                                              0,
+                                              1
+                                            ]
+                                          }
+                                        ],
+                                        "sorted": true
+                                      },
+                                      "sort_meta": [
+                                        1,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "kind": "block",
+                                      "name": "Label",
+                                      "value": {
+                                        "entries": [
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignX",
+                                            "value": "Center"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Font",
+                                            "value": "Font.2Ranger"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferTitle"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Pos",
+                                            "value": "20,8,-2"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Size",
+                                            "value": "920,34"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Text",
+                                            "value": "Центральный Инвестиционный Бизнес-центр Коалиции"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "TextColor",
+                                            "value": "88,229,255"
+                                          }
+                                        ],
+                                        "sorted": false
+                                      },
+                                      "sort_meta": [
+                                        0,
+                                        19
+                                      ]
+                                    },
+                                    {
+                                      "kind": "block",
+                                      "name": "Label",
+                                      "value": {
+                                        "entries": [
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignX",
+                                            "value": "Center"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Font",
+                                            "value": "Font.2SmallBold"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferGreeting"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Pos",
+                                            "value": "20,48,-2"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Size",
+                                            "value": "920,26"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Text",
+                                            "value": "Здравствуйте!"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "TextColor",
+                                            "value": "255,215,100"
+                                          }
+                                        ],
+                                        "sorted": false
+                                      },
+                                      "sort_meta": [
+                                        1,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "kind": "block",
+                                      "name": "Label",
+                                      "value": {
+                                        "entries": [
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignX",
+                                            "value": "Left"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Font",
+                                            "value": "Font.2Small"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferLine01"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Pos",
+                                            "value": "34,82,-2"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Size",
+                                            "value": "892,23"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Text",
+                                            "value": "Вас приветствует \"Центральный Инвестиционный Бизнес-центр Коалиции\"."
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "TextColor",
+                                            "value": "255,255,230"
+                                          }
+                                        ],
+                                        "sorted": false
+                                      },
+                                      "sort_meta": [
+                                        2,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "kind": "block",
+                                      "name": "Label",
+                                      "value": {
+                                        "entries": [
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignX",
+                                            "value": "Left"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Font",
+                                            "value": "Font.2Small"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferLine02"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Pos",
+                                            "value": "34,107,-2"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Size",
+                                            "value": "892,23"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Text",
+                                            "value": "К вашему вниманию мы предлагаем уникальную возможность инвестировать ваши кредиты"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "TextColor",
+                                            "value": "255,255,230"
+                                          }
+                                        ],
+                                        "sorted": false
+                                      },
+                                      "sort_meta": [
+                                        3,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "kind": "block",
+                                      "name": "Label",
+                                      "value": {
+                                        "entries": [
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignX",
+                                            "value": "Left"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Font",
+                                            "value": "Font.2Small"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferLine03"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Pos",
+                                            "value": "34,132,-2"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Size",
+                                            "value": "892,23"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Text",
+                                            "value": "в строительство суперсовременных космических станций!"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "TextColor",
+                                            "value": "255,255,230"
+                                          }
+                                        ],
+                                        "sorted": false
+                                      },
+                                      "sort_meta": [
+                                        4,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "kind": "block",
+                                      "name": "Label",
+                                      "value": {
+                                        "entries": [
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignX",
+                                            "value": "Left"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Font",
+                                            "value": "Font.2Small"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferLine04"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Pos",
+                                            "value": "34,157,-2"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Size",
+                                            "value": "892,23"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Text",
+                                            "value": "Минимальная стоимость строительства — 1 500 000 кредитов. Каждая следующая станция"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "TextColor",
+                                            "value": "255,255,230"
+                                          }
+                                        ],
+                                        "sorted": false
+                                      },
+                                      "sort_meta": [
+                                        5,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "kind": "block",
+                                      "name": "Label",
+                                      "value": {
+                                        "entries": [
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignX",
+                                            "value": "Left"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Font",
+                                            "value": "Font.2Small"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferLine05"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Pos",
+                                            "value": "34,182,-2"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Size",
+                                            "value": "892,23"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Text",
+                                            "value": "обойдётся на 500 000 кредитов дороже, но максимальная стоимость — 4 000 000 кредитов."
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "TextColor",
+                                            "value": "255,255,230"
+                                          }
+                                        ],
+                                        "sorted": false
+                                      },
+                                      "sort_meta": [
+                                        6,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "kind": "block",
+                                      "name": "Label",
+                                      "value": {
+                                        "entries": [
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignX",
+                                            "value": "Left"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Font",
+                                            "value": "Font.2Small"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferLine06"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Pos",
+                                            "value": "34,207,-2"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Size",
+                                            "value": "892,23"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Text",
+                                            "value": "После завершения строительства ваша инвестиция начнёт постепенно окупаться."
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "TextColor",
+                                            "value": "255,255,230"
+                                          }
+                                        ],
+                                        "sorted": false
+                                      },
+                                      "sort_meta": [
+                                        7,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "kind": "block",
+                                      "name": "Label",
+                                      "value": {
+                                        "entries": [
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignX",
+                                            "value": "Left"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Font",
+                                            "value": "Font.2Small"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferLine07"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Pos",
+                                            "value": "34,232,-2"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Size",
+                                            "value": "892,23"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Text",
+                                            "value": "Если, конечно, эту систему не захватят, а саму станцию не уничтожат..."
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "TextColor",
+                                            "value": "255,255,230"
+                                          }
+                                        ],
+                                        "sorted": false
+                                      },
+                                      "sort_meta": [
+                                        8,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "kind": "block",
+                                      "name": "Label",
+                                      "value": {
+                                        "entries": [
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignX",
+                                            "value": "Left"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Font",
+                                            "value": "Font.2Small"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferLine08"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Pos",
+                                            "value": "34,257,-2"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Size",
+                                            "value": "892,23"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Text",
+                                            "value": "Хи-хи-хи."
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "TextColor",
+                                            "value": "255,255,230"
+                                          }
+                                        ],
+                                        "sorted": false
+                                      },
+                                      "sort_meta": [
+                                        9,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "kind": "block",
+                                      "name": "Label",
+                                      "value": {
+                                        "entries": [
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignX",
+                                            "value": "Left"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Font",
+                                            "value": "Font.2Small"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferLine09"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Pos",
+                                            "value": "34,282,-2"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Size",
+                                            "value": "892,23"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Text",
+                                            "value": "Кхм... Прошу прощения. О чём это я?"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "TextColor",
+                                            "value": "255,255,230"
+                                          }
+                                        ],
+                                        "sorted": false
+                                      },
+                                      "sort_meta": [
+                                        10,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "kind": "block",
+                                      "name": "Label",
+                                      "value": {
+                                        "entries": [
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignX",
+                                            "value": "Left"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Font",
+                                            "value": "Font.2Small"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferLine10"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Pos",
+                                            "value": "34,307,-2"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Size",
+                                            "value": "892,23"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Text",
+                                            "value": "Ах да! Прибыль!"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "TextColor",
+                                            "value": "255,255,230"
+                                          }
+                                        ],
+                                        "sorted": false
+                                      },
+                                      "sort_meta": [
+                                        11,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "kind": "block",
+                                      "name": "Label",
+                                      "value": {
+                                        "entries": [
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignX",
+                                            "value": "Left"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Font",
+                                            "value": "Font.2Small"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferLine11"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Pos",
+                                            "value": "34,332,-2"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Size",
+                                            "value": "892,23"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Text",
+                                            "value": "После постройки станции вам будет начисляться:"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "TextColor",
+                                            "value": "255,255,230"
+                                          }
+                                        ],
+                                        "sorted": false
+                                      },
+                                      "sort_meta": [
+                                        12,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "kind": "block",
+                                      "name": "Label",
+                                      "value": {
+                                        "entries": [
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignX",
+                                            "value": "Left"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Font",
+                                            "value": "Font.2Small"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferLine12"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Pos",
+                                            "value": "34,357,-2"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Size",
+                                            "value": "892,23"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Text",
+                                            "value": "- 200 000 кредитов каждый год, пока станция существует и находится"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "TextColor",
+                                            "value": "255,255,230"
+                                          }
+                                        ],
+                                        "sorted": false
+                                      },
+                                      "sort_meta": [
+                                        13,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "kind": "block",
+                                      "name": "Label",
+                                      "value": {
+                                        "entries": [
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignX",
+                                            "value": "Left"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Font",
+                                            "value": "Font.2Small"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferLine13"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Pos",
+                                            "value": "34,382,-2"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Size",
+                                            "value": "892,23"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Text",
+                                            "value": "  на подконтрольной территории Коалиции."
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "TextColor",
+                                            "value": "255,255,230"
+                                          }
+                                        ],
+                                        "sorted": false
+                                      },
+                                      "sort_meta": [
+                                        14,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "kind": "block",
+                                      "name": "Label",
+                                      "value": {
+                                        "entries": [
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignX",
+                                            "value": "Left"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Font",
+                                            "value": "Font.2Small"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferLine14"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Pos",
+                                            "value": "34,407,-2"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Size",
+                                            "value": "892,23"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Text",
+                                            "value": "Стоимость зависит от количества действующих и строящихся инвестиционных станций."
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "TextColor",
+                                            "value": "255,255,230"
+                                          }
+                                        ],
+                                        "sorted": false
+                                      },
+                                      "sort_meta": [
+                                        15,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "kind": "block",
+                                      "name": "Label",
+                                      "value": {
+                                        "entries": [
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignX",
+                                            "value": "Left"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Font",
+                                            "value": "Font.2Small"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferLine15"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Pos",
+                                            "value": "34,432,-2"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Size",
+                                            "value": "892,23"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Text",
+                                            "value": "Первая станция окупается примерно за 7лет; последующие — дольше."
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "TextColor",
+                                            "value": "255,255,230"
+                                          }
+                                        ],
+                                        "sorted": false
+                                      },
+                                      "sort_meta": [
+                                        16,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "kind": "block",
+                                      "name": "Label",
+                                      "value": {
+                                        "entries": [
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignX",
+                                            "value": "Left"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Font",
+                                            "value": "Font.2Small"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferLine16"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Pos",
+                                            "value": "34,457,-2"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Size",
+                                            "value": "892,23"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Text",
+                                            "value": "Обеспечьте свою не долгую старость весомым копиталом ХА-ХА-ХА."
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "TextColor",
+                                            "value": "255,255,230"
+                                          }
+                                        ],
+                                        "sorted": false
+                                      },
+                                      "sort_meta": [
+                                        17,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "kind": "block",
+                                      "name": "Label",
+                                      "value": {
+                                        "entries": [
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignX",
+                                            "value": "Left"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "AlignY",
+                                            "value": "CenterEx"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Font",
+                                            "value": "Font.2Small"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Name",
+                                            "value": "FHDBaseBuilderPaidOfferLine17"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Pos",
+                                            "value": "34,482,-2"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Size",
+                                            "value": "892,23"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "Text",
+                                            "value": "Ну что? Вас заинтересовало наше скромное предложение?"
+                                          },
+                                          {
+                                            "kind": "parameter",
+                                            "name": "TextColor",
+                                            "value": "255,255,230"
+                                          }
+                                        ],
+                                        "sorted": false
+                                      },
+                                      "sort_meta": [
+                                        18,
+                                        0
+                                      ]
+                                    },
+                                    {
+                                      "kind": "parameter",
+                                      "name": "Modal",
+                                      "value": "True",
+                                      "sort_meta": [
+                                        0,
+                                        1
+                                      ]
+                                    },
+                                    {
+                                      "kind": "parameter",
+                                      "name": "MouseBlocking",
+                                      "value": "True",
+                                      "sort_meta": [
+                                        0,
+                                        1
+                                      ]
+                                    },
+                                    {
+                                      "kind": "parameter",
+                                      "name": "MouseBlockingTest",
+                                      "value": "True",
+                                      "sort_meta": [
+                                        0,
+                                        1
+                                      ]
+                                    },
+                                    {
+                                      "kind": "parameter",
+                                      "name": "Name",
+                                      "value": "FHDBaseBuilderPaidOfferPanel",
+                                      "sort_meta": [
+                                        0,
+                                        1
+                                      ]
+                                    },
+                                    {
+                                      "kind": "parameter",
+                                      "name": "Pos",
+                                      "value": "500,200,-300",
+                                      "sort_meta": [
+                                        0,
+                                        1
+                                      ]
+                                    },
+                                    {
+                                      "kind": "parameter",
+                                      "name": "Size",
+                                      "value": "960,640",
+                                      "sort_meta": [
+                                        0,
+                                        1
+                                      ]
+                                    },
+                                    {
+                                      "kind": "parameter",
+                                      "name": "Style",
+                                      "value": "Style.Window.2Normal",
+                                      "sort_meta": [
+                                        0,
+                                        1
+                                      ]
+                                    }
+                                  ],
+                                  "sorted": true
+                                },
+                                "sort_meta": [
+                                  0,
+                                  1
+                                ]
+                              }
+                            ],
+                            "sorted": true
+                          },
+                          "sort_meta": [
+                            0,
+                            1
+                          ]
+                        }
+                      ],
+                      "sorted": true
+                    },
+                    "sort_meta": [
+                      0,
+                      1
+                    ]
+                  }
+                ],
+                "sorted": true
+              },
+              "sort_meta": [
+                0,
+                1
+              ]
+            }
+          ],
+          "sorted": true
+        },
+        "sort_meta": [
+          0,
+          1
+        ]
+      }
+    ],
+    "sorted": true
+  }
+}
