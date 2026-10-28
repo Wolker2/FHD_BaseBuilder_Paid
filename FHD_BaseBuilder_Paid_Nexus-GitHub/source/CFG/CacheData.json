@@ -1,0 +1,74 @@
+{
+  "format": "cachedata",
+  "seed": 180697706,
+  "root": {
+    "entries": [
+      {
+        "kind": "block",
+        "name": "Bm",
+        "value": {
+          "entries": [
+            {
+              "kind": "block",
+              "name": "FHDBaseBuilder",
+              "value": {
+                "entries": [
+                  {
+                    "kind": "parameter",
+                    "name": "2InvestA",
+                    "value": "Mods\\FHD_MODS\\FHD_BaseBuilder_Paid\\DATA\\Interface\\2InvestA.gi"
+                  },
+                  {
+                    "kind": "parameter",
+                    "name": "2InvestD",
+                    "value": "Mods\\FHD_MODS\\FHD_BaseBuilder_Paid\\DATA\\Interface\\2InvestD.gi"
+                  },
+                  {
+                    "kind": "parameter",
+                    "name": "2InvestN",
+                    "value": "Mods\\FHD_MODS\\FHD_BaseBuilder_Paid\\DATA\\Interface\\2InvestN.gi"
+                  },
+                  {
+                    "kind": "parameter",
+                    "name": "OfferBtnA",
+                    "value": "Mods\\FHD_MODS\\FHD_BaseBuilder_Paid\\DATA\\Interface\\OfferBtnA.gi"
+                  },
+                  {
+                    "kind": "parameter",
+                    "name": "OfferBtnD",
+                    "value": "Mods\\FHD_MODS\\FHD_BaseBuilder_Paid\\DATA\\Interface\\OfferBtnD.gi"
+                  },
+                  {
+                    "kind": "parameter",
+                    "name": "OfferBtnN",
+                    "value": "Mods\\FHD_MODS\\FHD_BaseBuilder_Paid\\DATA\\Interface\\OfferBtnN.gi"
+                  },
+                  {
+                    "kind": "parameter",
+                    "name": "TabBtnA",
+                    "value": "Mods\\FHD_MODS\\FHD_BaseBuilder_Paid\\DATA\\Interface\\TabBtnA.gi"
+                  },
+                  {
+                    "kind": "parameter",
+                    "name": "TabBtnD",
+                    "value": "Mods\\FHD_MODS\\FHD_BaseBuilder_Paid\\DATA\\Interface\\TabBtnD.gi"
+                  },
+                  {
+                    "kind": "parameter",
+                    "name": "TabBtnN",
+                    "value": "Mods\\FHD_MODS\\FHD_BaseBuilder_Paid\\DATA\\Interface\\TabBtnN.gi"
+                  },
+                  {
+                    "kind": "parameter",
+                    "name": "TabBtnN",
+                    "value": "Mods\\FHD_MODS\\FHD_BaseBuilder_Paid\\DATA\\Interface\\TabBtnN.gi"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

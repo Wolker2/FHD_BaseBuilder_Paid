@@ -1,0 +1,20 @@
+Name=FHD_BaseBuilder_Paid
+Section=FHD_MODS
+Author=Prolog_D
+Dependence=
+Conflict=FHD_BaseBuilder_Free
+Priority=3
+Languages=Rus
+SmallDescription=<color=0,132,15>Инвестиционное строительство космических станций</color>
+SmallDescription=<color=255,215,0>ver.2.5.2</color>
+SmallDescription=Стоимость строительства растёт от 1 500 000 до 4 000 000 кредитов: каждая следующая станция дороже на 500 000.
+FullDescription=Добавляет на галактическую карту кнопку ИНВЕСТИЦИЯ. Заказанная станция строится ровно 30 игровых дней, после чего становится полноценным объектом галактики. Каждая действующая станция приносит фиксированные дивиденды 200 000 кредитов один раз за игровой год. Действует лимит трёх станций в системе и запрет дублирования типов; при захвате системы дивиденды приостанавливаются.
+FullDescription=<color=0,132,15>(Легален)</color>
+SmallDescription=------------------------------------  <color=0,200,255>ENG</color>  ----------------------------------------
+FullDescription= ------------------------------------  <color=0,200,255>ENG</color>  ----------------------------------------
+Languages=Eng
+SmallDescription=<color=0,132,15>Investment Construction of Space Stations</color>
+SmallDescription=<color=255,215,0>ver.2.5.2</color>
+SmallDescription=Construction cost rises from 1,500,000 to 4,000,000 credits: each next station costs 500,000 more.
+FullDescription=Adds an INVESTMENT button to the galaxy map. The ordered station takes exactly 30 in-game days to build, after which it becomes a fully functional galactic object. Each active station yields fixed dividends of 200,000 credits once per in-game year. There is a limit of three stations per system and a ban on duplicate types; upon system capture, dividends are suspended.
+FullDescription=<color=0,132,15>(Legal)</color>
